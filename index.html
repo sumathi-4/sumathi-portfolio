@@ -1,0 +1,3653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- SEO Meta Tags -->
+    <title>Sumathi A | Junior Full Stack Developer & MERN Stack Specialist</title>
+    <meta name="description" content="Portfolio of Sumathi A - Junior Full Stack MERN Developer experienced in React.js, Node.js, Express, MongoDB, PostgreSQL, Razorpay payments, and enterprise admin dashboards. Available for hire immediately.">
+    <meta name="keywords" content="Sumathi A, MERN Stack Developer, Full Stack Developer, React.js, Node.js, Express.js, MongoDB, PostgreSQL, Web Developer Chennai">
+    <meta name="author" content="Sumathi A">
+    <meta name="theme-color" content="#121316">
+
+    <!-- Bootstrap Grid CSS -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+    <!-- Ashley Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom Portfolio Enhancements -->
+    <style>
+        :root {
+            --mil-accent-color: #ff9800;
+            --mil-accent-glow: rgba(255, 152, 0, 0.25);
+            --mil-dark-card: #18191d;
+            --mil-dark-border: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Status Badge */
+        .mil-status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background: rgba(46, 204, 113, 0.12);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+            color: #2ecc71;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 25px;
+        }
+
+        /* Hero Banner Fix - Proper Viewport Height & No Overlap */
+        .mil-banner {
+            min-height: 100vh;
+            height: auto !important;
+            padding-top: 60px;
+            padding-bottom: 90px;
+            position: relative !important;
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .mil-banner .container {
+            height: auto !important;
+            display: block !important;
+            position: relative;
+            max-width: 1340px !important;
+        }
+
+        .mil-banner .mil-banner-content {
+            padding-bottom: 0 !important;
+            position: relative;
+        }
+
+        /* Top Brand Logo - Crisp White & Orange Accent */
+        .mil-hero-top-brand {
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .mil-hero-top-brand .mil-logo {
+            color: #ffffff !important;
+            font-size: 38px !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            line-height: 1.2 !important;
+            letter-spacing: -0.5px !important;
+        }
+
+        .mil-hero-top-brand .mil-logo span {
+            color: #ff9800 !important;
+        }
+
+        /* Fixed Hamburger Frame - Keep Hamburger on Top-Right */
+        .mil-frame .mil-frame-top {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .mil-frame .mil-frame-top .mil-menu-btn {
+            pointer-events: all;
+        }
+
+        /* Scroll Down Circle Arrow: Pinned to bottom-right of portrait frame */
+        .mil-circle-text {
+            position: absolute !important;
+            bottom: -25px !important;
+            right: -45px !important;
+            left: auto !important;
+            top: auto !important;
+            z-index: 10 !important;
+            pointer-events: all !important;
+        }
+
+        /* ========================================================
+           Executive Hero Portrait (Sumathi A - Static & Clean)
+           ======================================================== */
+        .mil-hero-portrait-col {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 5;
+            align-self: flex-end;
+            margin-top: 70px;
+            margin-bottom: 0px;
+            transform: translateX(40px);
+        }
+
+        .mil-hero-portrait-frame {
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            margin: 0 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0;
+        }
+
+        /* Glowing Nimbus Halo */
+        .mil-hero-nimbus {
+            position: absolute;
+            right: -25px;
+            bottom: -25px;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 152, 0, 0.4) 0%, rgba(230, 81, 0, 0.18) 45%, rgba(0, 0, 0, 0) 70%);
+            filter: blur(28px);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Portrait Image Container - Clean, Static & Stable (No Floating Animation) */
+        .mil-hero-img-box {
+            position: relative;
+            z-index: 2;
+            width: 290px;
+            height: 395px;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 152, 0, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65), 0 0 30px rgba(255, 152, 0, 0.2);
+            background: #14161d;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .mil-hero-img-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 55px rgba(0, 0, 0, 0.75), 0 0 38px rgba(255, 152, 0, 0.3);
+        }
+
+        .mil-hero-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .mil-hero-img-box:hover img {
+            transform: scale(1.03);
+        }
+
+        @media (min-width: 1400px) {
+            .mil-banner .container {
+                max-width: 1380px !important;
+            }
+            .mil-hero-portrait-col {
+                transform: translateX(55px);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .mil-hero-portrait-col {
+                transform: translateX(10px);
+            }
+            .mil-circle-text {
+                right: -25px !important;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .mil-hero-portrait-col {
+                margin-top: 45px;
+                margin-bottom: 25px;
+                justify-content: center;
+                align-self: center;
+                transform: none !important;
+            }
+            .mil-hero-portrait-frame {
+                margin: 0 auto;
+                justify-content: center;
+            }
+            .mil-hero-img-box {
+                width: 260px;
+                height: 350px;
+            }
+            .mil-circle-text {
+                display: none !important;
+            }
+        }
+
+        /* Hero Section Container & 3D Wireframe Background Animation: Shifted slightly into top-right corner without altering size */
+        .mil-banner {
+            overflow: hidden !important;
+        }
+
+        .mil-banner .mil-animation-frame .mil-animation {
+            opacity: 0.13 !important;
+            transition: opacity 0.4s ease;
+        }
+
+        .mil-banner .mil-animation-frame .mil-position-1 {
+            top: 40px !important;
+            right: -80px !important;
+            left: auto !important;
+        }
+
+        @media screen and (max-width: 992px) {
+            .mil-banner .mil-animation-frame .mil-position-1 {
+                top: 20px !important;
+                right: -60px !important;
+            }
+        }
+
+        /* Hero Buttons Container */
+        .mil-hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+            margin-top: 15px;
+            max-width: 100%;
+        }
+
+        .mil-hero-buttons .mil-button {
+            height: 48px !important;
+            padding: 0 26px !important;
+            font-size: 13px !important;
+            white-space: nowrap !important;
+            flex-shrink: 0 !important;
+        }
+
+        .mil-button.mil-button-outline {
+            background: transparent !important;
+            border: 1px solid rgba(255, 152, 0, 0.5) !important;
+            color: #ff9800 !important;
+            padding: 0 22px !important;
+            white-space: nowrap !important;
+            flex-shrink: 0 !important;
+        }
+
+        .mil-button.mil-button-outline:hover {
+            background: #ff9800 !important;
+            color: #000 !important;
+            border-color: #ff9800 !important;
+        }
+
+        /* Fix "Get In Touch" single-line and arrow circle alignment */
+        .mil-hero-buttons .mil-link {
+            white-space: nowrap !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            flex-shrink: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .mil-hero-buttons .mil-link span {
+            white-space: nowrap !important;
+            margin-right: 10px !important;
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            letter-spacing: 1.5px !important;
+        }
+
+        .mil-hero-buttons .mil-link svg {
+            width: 44px !important;
+            height: 44px !important;
+            min-width: 44px !important;
+            min-height: 44px !important;
+            border-radius: 50% !important;
+            margin-left: 0 !important;
+            padding: 12px !important;
+            background-color: rgba(255, 255, 255, 0.08) !important;
+            flex-shrink: 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        /* Hero Social Circle Buttons */
+        .mil-hero-social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            min-width: 44px;
+            min-height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ddd;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+
+        .mil-hero-social-btn:hover {
+            background: #ff9800;
+            border-color: #ff9800;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        .mil-hero-social-btn:hover {
+            background: #ff9800;
+            border-color: #ff9800;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        @media screen and (max-width: 768px) {
+            .mil-hero-buttons {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+        /* Hero Tech Stack Strip */
+        .mil-hero-tech-strip {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            max-width: 680px;
+        }
+
+        .mil-hero-tech-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #777;
+            margin-right: 6px;
+            font-weight: 600;
+        }
+
+        .mil-hero-tech-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: #ccc;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+        }
+
+        .mil-hero-tech-tag:hover {
+            border-color: #ff9800;
+            color: #fff;
+            background: rgba(255, 152, 0, 0.12);
+            transform: translateY(-2px);
+        }
+
+
+
+        .mil-status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #2ecc71;
+            box-shadow: 0 0 10px #2ecc71;
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(46, 204, 113, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+        }
+
+        /* Tech Pills */
+        .mil-tech-tag {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.06);
+            color: #ddd;
+            border: 1px solid var(--mil-dark-border);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 6px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .mil-tech-tag:hover {
+            border-color: var(--mil-accent-color);
+            color: #fff;
+            background: var(--mil-accent-glow);
+        }
+
+        .mil-tech-tag.mil-tag-highlight {
+            background: rgba(255, 152, 0, 0.15);
+            border-color: rgba(255, 152, 0, 0.4);
+            color: #ffb74d;
+        }
+
+        /* Modern Developer Project Cards */
+        .mil-custom-project-card {
+            background: #131418;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .mil-custom-project-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(255, 152, 0, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 152, 0, 0.12);
+        }
+
+        /* Modern Browser Frame Mockup */
+        .mil-split-browser-frame {
+            background: #0d0e11;
+            border: 1px solid rgba(255, 255, 255, 0.09);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Chrome Bar: macOS dots, URL pill, live indicator */
+        .mil-browser-chrome-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 10px 16px;
+            background: #14151a;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .mil-window-dots {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .mil-window-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .mil-dot-red { background: #ff5f56; }
+        .mil-dot-yellow { background: #ffbd2e; }
+        .mil-dot-green { background: #27c93f; }
+
+        .mil-browser-address-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.45);
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 220px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .mil-browser-address-pill i {
+            font-size: 9px;
+            color: #27c93f;
+        }
+
+        .mil-browser-live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 10px;
+            font-weight: 700;
+            color: #27c93f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+
+        .mil-browser-live-badge .mil-status-dot-mini {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #27c93f;
+            display: inline-block;
+            box-shadow: 0 0 6px #27c93f;
+        }
+
+        /* Dedicated Full-Width Segmented Tab Bar */
+        .mil-browser-tab-bar {
+            display: flex;
+            gap: 4px;
+            padding: 6px 10px;
+            background: #0f1014;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            width: 100%;
+        }
+
+        .mil-tab-switch-btn {
+            flex: 1 1 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 6px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.65);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-family: inherit;
+            line-height: 1.2;
+        }
+
+        .mil-tab-switch-btn:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .mil-tab-switch-btn.active {
+            background: #ff9800 !important;
+            color: #0d0e11 !important;
+            font-weight: 700;
+            border-color: #ff9800 !important;
+            box-shadow: 0 2px 10px rgba(255, 152, 0, 0.35);
+        }
+
+        .mil-tab-switch-btn i {
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            .mil-browser-chrome-bar {
+                padding: 8px 12px;
+            }
+            .mil-browser-address-pill {
+                max-width: 140px;
+                font-size: 10px;
+            }
+            .mil-browser-tab-bar {
+                padding: 4px 6px;
+                gap: 3px;
+            }
+            .mil-tab-switch-btn {
+                padding: 5px 3px;
+                font-size: 10px;
+                gap: 2px;
+            }
+            .mil-tab-switch-btn i {
+                display: none;
+            }
+        }
+
+        /* Option B: Split-View Project Cards - Sleek Executive Compact */
+        .mil-split-project-card {
+            background: #131418;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            overflow: hidden;
+            margin-bottom: 0;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+            transition: all 0.35s ease;
+        }
+
+        .mil-split-project-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 152, 0, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 25px rgba(255, 152, 0, 0.1);
+        }
+
+        /* Dedicated spacing between project cards */
+        #projects .col-lg-12.mil-mb-60 {
+            margin-bottom: 55px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #projects .col-lg-12.mil-mb-60 {
+                margin-bottom: 35px;
+            }
+        }
+
+        .mil-split-window-col {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Viewport: 16:9 proportional aspect ratio for balanced height & zero cropping */
+        .mil-split-browser-viewport {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            background: #090a0d;
+        }
+
+        .mil-split-browser-viewport img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+            display: block;
+        }
+
+        .mil-split-project-card:hover .mil-split-browser-viewport img {
+            transform: scale(1.03);
+        }
+
+        .mil-split-browser-viewport .mil-card-preview-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(14, 15, 18, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .mil-split-project-card:hover .mil-split-browser-viewport .mil-card-preview-overlay {
+            opacity: 1;
+        }
+
+        .mil-split-browser-viewport.is-static-view {
+            cursor: default !important;
+            pointer-events: none !important;
+        }
+
+        .mil-split-browser-viewport.is-static-view .mil-card-preview-overlay {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+        }
+
+        .mil-split-browser-viewport .mil-card-preview-overlay span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ff9800;
+            color: #000000 !important;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 18px;
+            border-radius: 25px;
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.45);
+        }
+
+        .mil-split-details-col {
+            padding: 24px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 991px) {
+            .mil-split-browser-viewport {
+                height: 230px;
+            }
+            .mil-split-details-col {
+                padding: 20px 18px;
+            }
+            .mil-split-window-col {
+                padding: 16px;
+            }
+        }
+
+        /* Project Screenshot Browser Preview */
+        .mil-card-preview-frame {
+            position: relative;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #0d0e11;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .mil-card-preview-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .mil-card-preview-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(14, 15, 18, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .mil-card-preview-overlay span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ff9800;
+            color: #000000 !important;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 18px;
+            border-radius: 25px;
+            box-shadow: 0 6px 20px rgba(255, 152, 0, 0.45);
+            transform: translateY(8px);
+            transition: transform 0.3s ease;
+        }
+
+        .mil-custom-project-card:hover .mil-card-preview-frame img,
+        .mil-spotlight-card:hover .mil-spotlight-img-frame img {
+            transform: scale(1.05);
+        }
+
+        .mil-custom-project-card:hover .mil-card-preview-overlay,
+        .mil-spotlight-card:hover .mil-spotlight-img-frame .mil-card-preview-overlay {
+            opacity: 1;
+        }
+
+        .mil-custom-project-card:hover .mil-card-preview-overlay span,
+        .mil-spotlight-card:hover .mil-spotlight-img-frame .mil-card-preview-overlay span {
+            transform: translateY(0);
+        }
+
+        /* Project 5 Spotlight preview image */
+        .mil-spotlight-img-frame {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 16px;
+            display: block;
+            background: #0d0e11;
+            cursor: pointer;
+        }
+
+        .mil-spotlight-img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .mil-card-body {
+            padding: 26px 26px 24px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .mil-project-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ff9800;
+            font-weight: 600;
+            margin-bottom: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .mil-project-title {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.4px;
+        }
+
+        .mil-project-subtitle {
+            color: #ffb74d;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            line-height: 1.35;
+        }
+
+        .mil-project-pitch {
+            color: #b5b8c5;
+            font-size: 12.5px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .mil-project-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 12px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .mil-project-features li {
+            font-size: 12.5px;
+            color: #a4a8b7;
+            line-height: 1.45;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .mil-project-features li i {
+            color: #ff9800;
+            font-size: 11px;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .mil-project-features li strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .mil-project-tech-tags {
+            margin-bottom: 14px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        /* Action Buttons */
+        .mil-project-action-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .mil-btn-live {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(255, 152, 0, 0.14);
+            border: 1px solid rgba(255, 152, 0, 0.5);
+            color: #ff9800 !important;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .mil-btn-live:hover {
+            background: #ff9800;
+            color: #000000 !important;
+            border-color: #ff9800;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.35);
+        }
+
+        .mil-btn-sub {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #d1d4dc !important;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .mil-btn-sub:hover {
+            border-color: rgba(255, 152, 0, 0.5);
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .mil-btn-github {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a8abb5 !important;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .mil-btn-github:hover {
+            border-color: #ffffff;
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+
+        /* Project 5 Spotlight Box */
+        .mil-spotlight-card {
+            background: #131418;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .mil-spotlight-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 152, 0, 0.45);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 152, 0, 0.12);
+        }
+
+        .mil-spotlight-preview-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 22px 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mil-spotlight-preview-title {
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .mil-spotlight-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .mil-spotlight-pill {
+            background: rgba(255, 152, 0, 0.08);
+            border: 1px solid rgba(255, 152, 0, 0.25);
+            color: #ffb74d;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 14px;
+            font-weight: 500;
+        }
+
+        /* Skill Grid */
+        .mil-skill-card {
+            background: var(--mil-dark-card);
+            border: 1px solid var(--mil-dark-border);
+            border-radius: 12px;
+            padding: 30px 25px;
+            margin-bottom: 25px;
+            height: 100%;
+            transition: border-color 0.3s ease;
+        }
+
+        .mil-skill-card:hover {
+            border-color: rgba(255, 152, 0, 0.5);
+        }
+
+        .mil-skill-title {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .mil-skill-title i {
+            color: var(--mil-accent-color);
+        }
+
+        /* ========================================================
+           Option 1: Tech Orbit Animated Card (Slot 6)
+           ======================================================== */
+        .mil-orbit-card {
+            background: #0d0f14 !important;
+            border: 1px solid rgba(255, 152, 0, 0.35) !important;
+            border-radius: 12px !important;
+            padding: 24px 20px 18px 20px !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 20px rgba(255, 152, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .mil-orbit-card:hover {
+            border-color: #ff9800 !important;
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 28px rgba(255, 152, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .mil-orbit-stage {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 6px 0;
+        }
+
+        /* Center Core */
+        .mil-orbit-center {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #ff9800 0%, #e65100 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-weight: 800;
+            font-size: 10.5px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 25px rgba(255, 152, 0, 0.6);
+            z-index: 5;
+            position: relative;
+        }
+
+        .mil-orbit-center i {
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        /* Ring 1 (Inner Orbit) */
+        .mil-orbit-ring-inner {
+            position: absolute;
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            border: 1px dashed rgba(255, 152, 0, 0.35);
+            animation: spinClockwise 16s linear infinite;
+        }
+
+        /* Ring 2 (Outer Orbit) */
+        .mil-orbit-ring-outer {
+            position: absolute;
+            width: 215px;
+            height: 215px;
+            border-radius: 50%;
+            border: 1px dashed rgba(255, 255, 255, 0.16);
+            animation: spinCounterClockwise 24s linear infinite;
+        }
+
+        .mil-orbit-stage:hover .mil-orbit-ring-inner,
+        .mil-orbit-stage:hover .mil-orbit-ring-outer {
+            animation-play-state: paused;
+        }
+
+        /* Orbiting Node Anchor */
+        .mil-orbit-node {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            margin-left: -19px;
+            margin-top: -19px;
+            border-radius: 50%;
+            background: #141720;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+            transition: transform 0.25s ease, border-color 0.25s ease;
+            cursor: pointer;
+        }
+
+        .mil-orbit-node:hover {
+            transform: scale(1.25) !important;
+            border-color: #ff9800;
+            z-index: 10;
+        }
+
+        /* Positioning for Ring 1 (Inner) */
+        .mil-node-inner-1 { top: 0%; left: 50%; }
+        .mil-node-inner-2 { top: 75%; left: 93.3%; }
+        .mil-node-inner-3 { top: 75%; left: 6.7%; }
+
+        .mil-orbit-ring-inner .mil-orbit-node {
+            animation: spinCounterClockwise 16s linear infinite;
+        }
+
+        /* Positioning for Ring 2 (Outer) */
+        .mil-node-outer-1 { top: 25%; left: 93.3%; }
+        .mil-node-outer-2 { top: 100%; left: 50%; }
+        .mil-node-outer-3 { top: 25%; left: 6.7%; }
+
+        .mil-orbit-ring-outer .mil-orbit-node {
+            animation: spinClockwise 24s linear infinite;
+        }
+
+        @keyframes spinClockwise {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spinCounterClockwise {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(-360deg); }
+        }
+
+        .mil-orbit-caption {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #14161d;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 11.5px;
+            color: #a4abb8;
+            margin-top: 8px;
+        }
+
+        .mil-orbit-caption .mil-orbit-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #ff9800;
+            font-weight: 600;
+            font-size: 11.5px;
+        }
+
+        .mil-orbit-caption .pulse-mini {
+            width: 7px;
+            height: 7px;
+            background: #ff9800;
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(255, 152, 0, 0.7);
+            animation: termPulse 1.8s infinite;
+        }
+
+        /* Key Metrics Strip - Option 2: Glassmorphic Cards with Icons & Animated Counters */
+        .mil-hero-stats-strip {
+            background: #141518;
+            border-top: 1px solid var(--mil-dark-border);
+            border-bottom: 1px solid var(--mil-dark-border);
+            padding: 45px 0 25px 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mil-hero-stats-strip .row {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .mil-hero-stats-strip .row > [class*="col-"] {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .mil-stat-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 28px 18px 24px 18px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .mil-stat-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255, 152, 0, 0), transparent);
+            transition: background 0.4s ease;
+        }
+
+        .mil-stat-box:hover {
+            border-color: rgba(255, 152, 0, 0.45);
+            background: rgba(255, 255, 255, 0.055);
+            transform: translateY(-5px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(255, 152, 0, 0.15);
+        }
+
+        .mil-stat-box:hover::before {
+            background: linear-gradient(90deg, transparent, #ff9800, transparent);
+        }
+
+        .mil-stat-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 152, 0, 0.1);
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            color: #ff9800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            margin-bottom: 14px;
+            box-shadow: 0 0 18px rgba(255, 152, 0, 0.12);
+            transition: all 0.35s ease;
+        }
+
+        .mil-stat-box:hover .mil-stat-icon {
+            background: #ff9800;
+            color: #0c0d11;
+            border-color: #ff9800;
+            box-shadow: 0 0 22px rgba(255, 152, 0, 0.55);
+            transform: scale(1.08);
+        }
+
+        .mil-stat-number {
+            font-size: 38px;
+            font-weight: 700;
+            color: #ff9800;
+            background: linear-gradient(135deg, #ffb74d 0%, #ff9800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+            display: inline-flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        .mil-stat-number .mil-counter {
+            font-variant-numeric: tabular-nums;
+            display: inline-block;
+        }
+
+        .mil-stat-title {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 6px;
+            line-height: 1.3;
+            letter-spacing: 0.2px;
+        }
+
+        .mil-stat-sub {
+            font-size: 12px;
+            color: #94969d;
+            line-height: 1.4;
+            letter-spacing: 0.3px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .mil-stat-box {
+                padding: 20px 10px 18px 10px;
+            }
+            .mil-stat-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .mil-stat-number {
+                font-size: 30px;
+            }
+            .mil-stat-title {
+                font-size: 12.5px;
+            }
+            .mil-stat-sub {
+                font-size: 11px;
+            }
+        }
+
+        /* ========================================================
+           Section 4: Experience & Education Light Theme (Editorial)
+           ======================================================== */
+        #experience.mil-experience-section-light {
+            background-color: #ffffff !important;
+            border-top: 1px solid #e8e9ed;
+            border-bottom: 1px solid #e8e9ed;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mil-exp-card {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 30px;
+            border-left: 2px solid #e2e6ef;
+        }
+
+        .mil-exp-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .mil-exp-card::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 22px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ff9800;
+            border: 2px solid #ffffff;
+            box-shadow: 0 0 0 2px #ff9800, 0 3px 8px rgba(255, 152, 0, 0.4);
+        }
+
+        .mil-exp-card-inner {
+            background: #ffffff;
+            border: 1px solid #e5e8ef;
+            border-radius: 14px;
+            padding: 24px 26px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        .mil-exp-card-inner:hover {
+            border-color: #ff9800;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(255, 152, 0, 0.12);
+        }
+
+        .mil-exp-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11.5px;
+            color: #d84315;
+            background: rgba(255, 152, 0, 0.1);
+            border: 1px solid rgba(255, 152, 0, 0.28);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .mil-exp-role {
+            font-size: 19px;
+            color: #111215 !important;
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 6px;
+        }
+
+        .mil-exp-company {
+            font-size: 14.5px;
+            color: #e65100 !important;
+            font-weight: 600;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .mil-exp-desc {
+            color: #3b3f4e !important;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .mil-exp-desc li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 8px;
+            color: #3b3f4e !important;
+        }
+
+        .mil-exp-desc li:last-child {
+            margin-bottom: 0;
+        }
+
+        .mil-exp-desc li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #ff9800;
+            font-size: 14px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        .mil-exp-desc strong,
+        .mil-exp-desc-text strong {
+            color: #111215 !important;
+            font-weight: 600;
+        }
+
+        .mil-exp-desc-text {
+            color: #4b4f5d !important;
+            font-size: 13.5px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .mil-grade-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #f4f6fa;
+            border: 1px solid #dce1eb;
+            color: #111215;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 12px;
+        }
+
+        .mil-grade-pill i {
+            color: #ff9800;
+        }
+
+        /* Quick contact buttons */
+        .mil-contact-direct-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #f4f6fa;
+            border: 1px solid #dce1eb;
+            color: #111215;
+            padding: 11px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.25s ease;
+        }
+
+        .mil-contact-direct-btn:hover {
+            background: #ff9800;
+            border-color: #ff9800;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(255, 152, 0, 0.3);
+        }
+
+        /* ========================================================
+           Section 6: Contact Section Light Theme (Editorial)
+           ======================================================== */
+        #contact.mil-contact-section-light {
+            background-color: #ffffff !important;
+            border-top: 1px solid #e8e9ed;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mil-contact-item-light {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .mil-contact-item-light .mil-contact-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: rgba(255, 152, 0, 0.12);
+            border: 1px solid rgba(255, 152, 0, 0.3);
+            color: #e65100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .mil-contact-item-light h6 {
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #e65100;
+            margin-bottom: 4px;
+        }
+
+        .mil-contact-item-light a,
+        .mil-contact-item-light p {
+            font-size: 15.5px;
+            font-weight: 600;
+            color: #111215 !important;
+            margin-bottom: 0;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            line-height: 1.4;
+        }
+
+        .mil-contact-item-light a:hover {
+            color: #ff9800 !important;
+        }
+
+        .mil-contact-form-card-light {
+            background: #ffffff;
+            border: 1px solid #e2e5eb;
+            border-radius: 16px;
+            padding: 38px 34px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .mil-contact-form-card-light h3 {
+            color: #111215;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .mil-contact-form-card-light p {
+            color: #555968;
+            font-size: 13.5px;
+            line-height: 1.5;
+            margin-bottom: 22px;
+        }
+
+        .mil-contact-form-card-light input,
+        .mil-contact-form-card-light textarea {
+            width: 100%;
+            padding: 13px 16px;
+            background: #f8f9fc;
+            border: 1px solid #dce1eb;
+            border-radius: 8px;
+            color: #111215;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.25s ease;
+        }
+
+        .mil-contact-form-card-light input:focus,
+        .mil-contact-form-card-light textarea:focus {
+            outline: none;
+            border-color: #ff9800;
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.15);
+        }
+
+        .mil-contact-btn-submit {
+            background: #ff9800;
+            color: #000000 !important;
+            border: none;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 14px 28px;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 6px 18px rgba(255, 152, 0, 0.35);
+            transition: all 0.25s ease;
+        }
+
+        .mil-contact-btn-submit:hover {
+            background: #f57c00;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(255, 152, 0, 0.45);
+        }
+
+        /* Section 2: About Section Dark Theme (Option A) */
+        #about.mil-about-section {
+            background-color: #0e0f11 !important;
+            border-bottom: 1px solid var(--mil-dark-border);
+            position: relative;
+            z-index: 2;
+        }
+
+        .mil-about-mini-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 10px;
+            padding: 16px 18px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .mil-about-mini-box:hover {
+            border-color: rgba(255, 152, 0, 0.35);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .mil-about-mini-box .mil-mini-icon {
+            font-size: 20px;
+            color: #ff9800;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .mil-profile-card {
+            background: #15161a;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-left: 4px solid #ff9800;
+            border-radius: 14px;
+            padding: 35px 30px;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+            transition: all 0.35s ease;
+        }
+
+        .mil-profile-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 152, 0, 0.12);
+            border-color: rgba(255, 152, 0, 0.3);
+            border-left-color: #ff9800;
+        }
+
+        .mil-profile-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mil-profile-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            line-height: 1.5;
+        }
+
+        .mil-profile-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .mil-profile-key {
+            color: #888888;
+            font-weight: 500;
+            flex-shrink: 0;
+            min-width: 100px;
+        }
+
+        .mil-profile-val {
+            color: #ffffff;
+            font-weight: 500;
+            text-align: right;
+        }
+
+        .mil-profile-val strong {
+            color: #ff9800;
+        }
+
+        .mil-badge-immediate {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(46, 204, 113, 0.12);
+            border: 1px solid rgba(46, 204, 113, 0.35);
+            color: #2ecc71 !important;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .mil-profile-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .mil-profile-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #dddddd;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.25s ease;
+        }
+
+        .mil-profile-btn:hover {
+            background: #ff9800;
+            border-color: #ff9800;
+            color: #000000;
+            transform: translateY(-2px);
+        }
+
+        @media screen and (max-width: 576px) {
+            .mil-profile-list li {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .mil-profile-val {
+                text-align: left;
+            }
+        }
+
+        /* Section 2: About Section Clean Editorial Light Theme (Option B) */
+        #about.mil-about-section-light {
+            background-color: #ffffff !important;
+            border-top: 1px solid #e8e9ed;
+            border-bottom: 1px solid #e8e9ed;
+            position: relative;
+            z-index: 2;
+        }
+
+        .mil-about-mini-box-light {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: #ffffff;
+            border: 1px solid #e2e5eb;
+            border-radius: 12px;
+            padding: 18px 20px;
+            height: 100%;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        .mil-about-mini-box-light:hover {
+            border-color: #ff9800;
+            background: #ffffff;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(255, 152, 0, 0.12);
+        }
+
+        .mil-about-mini-box-light .mil-mini-icon {
+            font-size: 20px;
+            color: #e65100;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .mil-profile-card-light {
+            background: #ffffff;
+            border: 1px solid #e2e5eb;
+            border-left: 4px solid #ff9800;
+            border-radius: 16px;
+            padding: 35px 30px;
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.07);
+            transition: all 0.35s ease;
+        }
+
+        .mil-profile-card-light:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12), 0 0 25px rgba(255, 152, 0, 0.12);
+            border-color: #ff9800;
+            border-left-color: #ff9800;
+        }
+
+        .mil-profile-list-light {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .mil-profile-list-light li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            padding-bottom: 11px;
+            border-bottom: 1px solid #f0f1f5;
+            line-height: 1.5;
+        }
+
+        .mil-profile-list-light li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .mil-profile-key-light {
+            color: #64748b;
+            font-weight: 500;
+            flex-shrink: 0;
+            min-width: 105px;
+        }
+
+        .mil-profile-val-light {
+            color: #1e293b;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        .mil-profile-val-light strong {
+            color: #d97706;
+            font-weight: 700;
+        }
+
+        .mil-badge-immediate-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            color: #047857 !important;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .mil-profile-actions-light {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            border-top: 1px solid #f0f1f5;
+        }
+
+        .mil-profile-btn-light {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            color: #1e293b;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .mil-profile-btn-light:hover {
+            background: #ff9800;
+            border-color: #ff9800;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 152, 0, 0.3);
+        }
+
+        @media screen and (max-width: 576px) {
+            .mil-profile-list-light li {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .mil-profile-val-light {
+                text-align: left;
+            }
+        }
+
+        /* Finalized Custom Cursor - Developer Code Tag Focus Cursor */
+        .mil-cursor-dot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 9px;
+            height: 9px;
+            background: #ff9800;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10000;
+            box-shadow: 0 0 12px #ff9800, 0 0 24px rgba(255, 152, 0, 0.75);
+            transform: translate(-50%, -50%);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .mil-cursor-dot.mil-dot-hidden {
+            opacity: 0 !important;
+            transform: translate(-50%, -50%) scale(0) !important;
+        }
+
+        .mil-ball {
+            width: 44px !important;
+            height: 44px !important;
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            z-index: 9999 !important;
+            background-color: rgba(255, 152, 0, 0.04) !important;
+            border: 2px solid rgba(255, 152, 0, 0.85) !important;
+            border-radius: 50% !important;
+            pointer-events: none !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            opacity: 1 !important;
+            box-sizing: border-box !important;
+            transition: width 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                        height 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), 
+                        border-color 0.25s ease, 
+                        background-color 0.25s ease, 
+                        box-shadow 0.25s ease !important;
+        }
+
+        .mil-ball .mil-code-tag {
+            position: absolute;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 15px;
+            font-weight: 700;
+            color: #ff9800;
+            letter-spacing: 0.5px;
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            pointer-events: none;
+            user-select: none;
+            text-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+        }
+
+        /* Hover over clickable elements: expands into glowing code badge */
+        .mil-ball.mil-code-active {
+            width: 62px !important;
+            height: 62px !important;
+            border: 2px solid #ff9800 !important;
+            background-color: rgba(18, 19, 23, 0.88) !important;
+            box-shadow: 0 0 22px rgba(255, 152, 0, 0.45), inset 0 0 12px rgba(255, 152, 0, 0.2) !important;
+            backdrop-filter: blur(4px);
+        }
+
+        .mil-ball.mil-code-active .mil-code-tag {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .mil-cursor-dot,
+            .mil-ball {
+                display: none !important;
+            }
+        }
+
+        /* ========================================================
+           Minimalist Single-Line Editorial Footer (Option B)
+           ======================================================== */
+        .mil-custom-footer {
+            background-color: #0d0e11 !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            z-index: 5;
+            padding: 24px 0 !important;
+            overflow: hidden;
+        }
+
+        .mil-custom-footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 152, 0, 0.45), transparent);
+        }
+
+        .mil-custom-footer .container {
+            max-width: 1340px !important;
+            padding-left: 55px !important;
+            padding-right: 55px !important;
+        }
+
+        .mil-footer-single-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Left: Logo & Role */
+        .mil-footer-left-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        .mil-footer-brand-mini {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            letter-spacing: -0.5px;
+            line-height: 1;
+        }
+
+        .mil-footer-brand-mini span {
+            color: #ff9800 !important;
+        }
+
+        .mil-footer-sep {
+            color: rgba(255, 255, 255, 0.18);
+            font-size: 13px;
+            user-select: none;
+        }
+
+        .mil-footer-tagline-mini {
+            font-size: 13px;
+            color: #9295a0;
+            white-space: nowrap;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .mil-footer-dot-avail {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #27c93f;
+            box-shadow: 0 0 6px #27c93f;
+            margin-left: 4px;
+            animation: termPulse 1.8s infinite;
+        }
+
+        /* Center: Social Icons */
+        .mil-footer-center-wrap {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .mil-footer-mini-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b5b7c0 !important;
+            font-size: 14px;
+            transition: all 0.25s ease;
+            text-decoration: none !important;
+        }
+
+        .mil-footer-mini-icon:hover {
+            background: #ff9800 !important;
+            border-color: #ff9800 !important;
+            color: #0c0d11 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(255, 152, 0, 0.35);
+        }
+
+        /* Right: Copyright & Back to Top */
+        .mil-footer-right-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            flex-shrink: 0;
+        }
+
+        .mil-footer-copy-mini {
+            font-size: 12.5px;
+            color: #838590;
+            white-space: nowrap;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .mil-footer-copy-mini strong {
+            color: #dddee2;
+            font-weight: 500;
+        }
+
+        .mil-footer-top-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #ff9800 !important;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none !important;
+            letter-spacing: 0.4px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .mil-footer-top-link:hover {
+            color: #ffb74d !important;
+            transform: translateY(-1px);
+        }
+
+        @media screen and (max-width: 991px) {
+            .mil-custom-footer {
+                padding: 24px 0 !important;
+            }
+            .mil-custom-footer .container {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+            }
+            .mil-footer-single-line {
+                flex-direction: column;
+                justify-content: center;
+                gap: 16px;
+                text-align: center;
+            }
+            .mil-footer-left-wrap,
+            .mil-footer-center-wrap,
+            .mil-footer-right-wrap {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="mil-wrapper" id="top">
+
+        <!-- Cursor (Finalized: Developer Code Tag Focus Cursor) -->
+        <div class="mil-cursor-dot"></div>
+        <div class="mil-ball">
+            <div class="mil-code-tag">&lt;/&gt;</div>
+            <span class="mil-icon-1">
+                <svg viewBox="0 0 128 128">
+                    <path d="M106.1,41.9c-1.2-1.2-3.1-1.2-4.2,0c-1.2,1.2-1.2,3.1,0,4.2L116.8,61H11.2l14.9-14.9c1.2-1.2,1.2-3.1,0-4.2 c-1.2-1.2-3.1-1.2-4.2,0l-20,20c-1.2,1.2-1.2,3.1,0,4.2l20,20c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9c1.2-1.2,1.2-3.1,0-4.2 L11.2,67h105.5l-14.9,14.9c-1.2,1.2-1.2,3.1,0,4.2c0.6,0.6,1.4,0.9,2.1,0.9s1.5-0.3,2.1-0.9l20-20c1.2-1.2,1.2-3.1,0-4.2L106.1,41.9 z" />
+                </svg>
+            </span>
+            <div class="mil-more-text">View</div>
+            <div class="mil-choose-text">Select</div>
+        </div>
+        <!-- Cursor end -->
+
+        <!-- Preloader -->
+        <div class="mil-preloader">
+            <div class="mil-preloader-animation">
+                <div class="mil-pos-abs mil-animation-1">
+                    <p class="mil-h3 mil-muted mil-thin">Sumathi A</p>
+                    <p class="mil-h3 mil-muted">MERN Stack</p>
+                    <p class="mil-h3 mil-muted mil-thin">Developer</p>
+                </div>
+                <div class="mil-pos-abs mil-animation-2">
+                    <div class="mil-reveal-frame">
+                        <p class="mil-reveal-box"></p>
+                        <p class="mil-h3 mil-muted mil-thin">Sumathi's Portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader end -->
+
+        <!-- Scrollbar Progress Track -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+
+        <!-- Menu Navigation Frame -->
+        <div class="mil-menu-frame">
+            <!-- Frame Clone -->
+            <div class="mil-frame-top">
+                <a href="#top" class="mil-logo">&lt;Sumathi<span> /&gt;</span></a>
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <!-- Frame Clone End -->
+            <div class="container">
+                <div class="mil-menu-content">
+                    <div class="row">
+                        <div class="col-xl-5">
+
+                            <nav class="mil-main-menu" id="swupMenu">
+                                <ul>
+                                    <li class="mil-active">
+                                        <a href="#top" data-no-swup>Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#about" data-no-swup>About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#projects" data-no-swup>Featured Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#experience" data-no-swup>Experience</a>
+                                    </li>
+                                    <li>
+                                        <a href="#skills" data-no-swup>Tech Stack</a>
+                                    </li>
+                                    <li>
+                                        <a href="#contact" data-no-swup>Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="Sumathi_A_Resume.pdf" download="Sumathi_A_Resume.pdf" target="_blank" data-no-swup style="color: #ff9800;">Resume <i class="fas fa-download"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <div class="col-xl-7">
+
+                            <div class="mil-menu-right-frame">
+                                <div class="mil-animation-in">
+                                    <div class="mil-animation-frame">
+                                        <div class="mil-animation mil-position-1 mil-scale" data-value-1="2" data-value-2="2"></div>
+                                    </div>
+                                </div>
+                                <div class="mil-menu-right">
+                                    <div class="row">
+                                        <div class="col-lg-8 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Flagship Projects</h6>
+
+                                            <ul class="mil-menu-list">
+                                                <li><a href="#projects" data-no-swup class="mil-light-soft">MithraShopy (Multi-Vendor E-Commerce)</a></li>
+                                                <li><a href="#projects" data-no-swup class="mil-light-soft">Happy Sarees (Razorpay E-Commerce)</a></li>
+                                                <li><a href="#projects" data-no-swup class="mil-light-soft">Hasslefree Travel (Visa & Tax Billing Engine)</a></li>
+                                                <li><a href="#projects" data-no-swup class="mil-light-soft">Print Module (Automated PDF & Pricing)</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-lg-4 mil-mb-60">
+
+                                            <h6 class="mil-muted mil-mb-30">Direct Connect</h6>
+
+                                            <ul class="mil-menu-list">
+                                                <li><a href="https://github.com/sumathi-4" target="_blank" data-no-swup class="mil-light-soft"><i class="fab fa-github"></i> GitHub</a></li>
+                                                <li><a href="https://linkedin.com/in/sumathi2006" target="_blank" data-no-swup class="mil-light-soft"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                                                <li><a href="mailto:sumathisaraswathi4@gmail.com" data-no-swup class="mil-light-soft"><i class="fas fa-envelope"></i> Email</a></li>
+                                                <li><a href="tel:+919361211847" data-no-swup class="mil-light-soft"><i class="fas fa-phone"></i> +91 9361211847</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="mil-divider mil-mb-60"></div>
+                                    <div class="row justify-content-between">
+                                        <div class="col-lg-8 mil-mb-30">
+                                            <h6 class="mil-muted mil-mb-20">Availability</h6>
+                                            <p class="mil-light-soft">Actively interviewing. Ready to join immediately within 1 week for Full-Time Junior/Full Stack Developer roles.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!-- Curtain -->
+        <div class="mil-curtain"></div>
+
+        <!-- Frame Top & Bottom -->
+        <div class="mil-frame">
+            <div class="mil-frame-top">
+                <div class="mil-menu-btn">
+                    <span></span>
+                </div>
+            </div>
+            <div class="mil-frame-bottom">
+                <div class="mil-current-page"></div>
+                <div class="mil-back-to-top">
+                    <a href="#top" data-no-swup class="mil-link mil-dark mil-arrow-place">
+                        <span>Back to top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Frame End -->
+
+        <!-- Main Content -->
+        <div class="mil-content">
+            <div id="swupMain" class="mil-main-transition">
+
+                <!-- HERO BANNER -->
+                <section class="mil-banner mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="mil-animation-frame">
+                            <div class="mil-animation mil-position-1 mil-scale" data-value-1="7" data-value-2="1.6"></div>
+                            <div class="mil-animation mil-position-2 mil-scale" data-value-1="4" data-value-2="1"></div>
+                            <div class="mil-animation mil-position-3 mil-scale" data-value-1="1.2" data-value-2=".1"></div>
+                        </div>
+
+                        <div class="mil-gradient"></div>
+
+                        <div class="container">
+                            <div class="row align-items-end">
+                                <div class="col-lg-7">
+                                    <div class="mil-banner-content mil-up">
+
+                                        <div class="mil-hero-top-brand mil-mb-25">
+                                            <a href="#top" class="mil-logo">&lt;Sumathi<span> /&gt;</span></a>
+                                        </div>
+
+                                        <div class="mil-mb-20">
+                                            <span style="display: inline-flex; align-items: center; gap: 8px; background: rgba(39, 201, 63, 0.12); border: 1px solid rgba(39, 201, 63, 0.35); color: #27c93f; font-size: 12.5px; font-weight: 700; padding: 5px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                <span style="width: 7px; height: 7px; background: #27c93f; border-radius: 50%; box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.7); animation: termPulse 1.8s infinite;"></span> Immediate Joiner (0–7 Days) &bull; Open to Any Location
+                                            </span>
+                                        </div>
+
+                                        <h1 class="mil-muted mil-mb-25">
+                                            Sumathi A<span class="mil-accent">.</span><br>
+                                            Full Stack <br>
+                                            MERN Developer
+                                        </h1>
+
+                                        <p class="mil-light-soft" style="font-size: 16.5px; line-height: 1.75; margin-bottom: 35px; max-width: 620px;">
+                                            I engineer fast, scalable web applications with <strong>React.js, Node.js, Express.js, MongoDB, and PostgreSQL</strong>. Experienced in building multi-role portals (Customer, Admin, Seller), secure Razorpay payment workflows, and automated billing engines with clean, maintainable architecture.
+                                        </p>
+
+                                        <div class="mil-hero-buttons mil-up">
+                                            <a href="#projects" data-no-swup class="mil-button mil-arrow-place">
+                                                <span>Explore Projects</span>
+                                            </a>
+
+                                            <a href="Sumathi_A_Resume.pdf" download="Sumathi_A_Resume.pdf" target="_blank" data-no-swup class="mil-button mil-button-outline">
+                                                <span><i class="fas fa-file-download" style="margin-right: 8px;"></i>Download Resume</span>
+                                            </a>
+
+                                            <a href="#contact" data-no-swup class="mil-link mil-muted mil-arrow-place">
+                                                <span>Get In Touch</span>
+                                            </a>
+
+                                            <a href="https://github.com/sumathi-4" target="_blank" data-no-swup class="mil-hero-social-btn" title="GitHub Profile">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+
+                                            <a href="https://linkedin.com/in/sumathi2006" target="_blank" data-no-swup class="mil-hero-social-btn" title="LinkedIn Profile">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="mil-hero-tech-strip mil-up">
+                                            <span class="mil-hero-tech-label">Core Stack:</span>
+                                            <span class="mil-hero-tech-tag"><i class="fab fa-react" style="color: #61dafb;"></i> React.js</span>
+                                            <span class="mil-hero-tech-tag"><i class="fab fa-node-js" style="color: #68a063;"></i> Node.js</span>
+                                            <span class="mil-hero-tech-tag"><i class="fas fa-server" style="color: #ff9800;"></i> Express.js</span>
+                                            <span class="mil-hero-tech-tag"><i class="fas fa-database" style="color: #4db33d;"></i> MongoDB</span>
+                                            <span class="mil-hero-tech-tag"><i class="fas fa-database" style="color: #336791;"></i> PostgreSQL</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Hero Portrait (Sumathi A - Static & Clean) -->
+                                <div class="col-lg-5 mil-hero-portrait-col mil-up">
+                                    <div class="mil-hero-portrait-frame">
+                                        <div class="mil-hero-nimbus"></div>
+                                        <div class="mil-hero-img-box">
+                                            <img src="img/profile/sumathi.jpg" alt="Sumathi A - Full Stack MERN Developer">
+                                        </div>
+
+                                        <!-- Scroll Down Circle Arrow pinned to bottom-right of portrait -->
+                                        <div class="mil-circle-text">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
+                                                <defs>
+                                                    <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+                                                </defs>
+                                                <circle cx="150" cy="100" r="75" fill="none" />
+                                                <g>
+                                                    <use xlink:href="#circlePath" fill="none" />
+                                                    <text style="letter-spacing: 6.5px">
+                                                        <textPath xlink:href="#circlePath">Scroll down - Explore portfolio - </textPath>
+                                                    </text>
+                                                </g>
+                                            </svg>
+                                            <a href="#about" data-no-swup class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mi-invert-fix end -->
+                </section>
+                <!-- HERO BANNER END -->
+
+                <!-- KEY METRICS STRIP (Option 2: Animated Cards with Icons & Counters) -->
+                <section class="mil-hero-stats-strip">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="mil-stat-box mil-up">
+                                    <div class="mil-stat-icon"><i class="fas fa-users-cog"></i></div>
+                                    <div class="mil-stat-number"><span class="mil-counter" data-target="3">0</span>+</div>
+                                    <div class="mil-stat-title">Multi-Role Portals</div>
+                                    <div class="mil-stat-sub">Customer · Admin · Seller</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="mil-stat-box mil-up">
+                                    <div class="mil-stat-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="mil-stat-number"><span class="mil-counter" data-target="5">0</span>+</div>
+                                    <div class="mil-stat-title">Production Projects</div>
+                                    <div class="mil-stat-sub">Full Stack MERN Apps</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="mil-stat-box mil-up">
+                                    <div class="mil-stat-icon"><i class="fas fa-database"></i></div>
+                                    <div class="mil-stat-number"><span class="mil-counter" data-target="2">0</span></div>
+                                    <div class="mil-stat-title">Database Paradigms</div>
+                                    <div class="mil-stat-sub">MongoDB & PostgreSQL</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="mil-stat-box mil-up">
+                                    <div class="mil-stat-icon"><i class="fas fa-shield-alt"></i></div>
+                                    <div class="mil-stat-number"><span class="mil-counter" data-target="100">0</span>%</div>
+                                    <div class="mil-stat-title">Code & API Tested</div>
+                                    <div class="mil-stat-sub">Responsive & Postman Verified</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- KEY METRICS STRIP END -->
+
+                <!-- ABOUT & VALUE PROPOSITION (Clean Editorial Light Theme) -->
+                <section id="about" class="mil-about-section-light">
+                    <div class="container mil-p-120-60">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-6">
+
+                                <div class="mil-mb-60">
+                                    <span class="mil-suptitle mil-up mil-mb-20" style="color: #e65100 !important; font-weight: 600;"><i class="fas fa-code"></i> Full Stack MERN Developer</span>
+                                    <h2 class="mil-up mil-mb-30" style="color: #111215 !important; font-weight: 700;">Bridging Intuitive UI with <br><span style="color: #e65100; font-weight: 300;">Scalable Backend Architecture.</span></h2>
+                                    
+                                    <p class="mil-up mil-mb-20" style="color: #2b2e38; font-size: 16px; line-height: 1.8;">
+                                        I am a Junior Full Stack Developer with a strong academic background (<strong style="color: #111215;">B.E. Computer Science, 8.00 CGPA</strong>) and practical expertise in building complete, database-driven web applications. I specialize in the <strong style="color: #111215;">MERN stack (React.js, Node.js, Express.js, MongoDB)</strong> along with relational databases (<strong style="color: #111215;">PostgreSQL</strong>), crafting responsive user interfaces connected to secure, high-performance REST APIs.
+                                    </p>
+
+                                    <p class="mil-up mil-mb-30" style="color: #4b4f5d; font-size: 15px; line-height: 1.8;">
+                                        Across 5+ production-ready projects, I have engineered end-to-end architectures: multi-vendor marketplaces with isolated role permissions (<strong style="color: #111215;">Customer, Admin, Seller</strong>), dual payment gateways (<strong style="color: #111215;">Razorpay online checkout &amp; real-time UPI QR</strong>), <strong style="color: #111215;">automated GST billing &amp; PDF invoice generation</strong> with dynamic Excel exports, and client-side PDF.js page inspection. I write clean, modular code and am prepared to contribute immediately to engineering sprints.
+                                    </p>
+
+                                    <div class="row mil-up">
+                                        <div class="col-sm-6 mil-mb-20">
+                                            <div class="mil-about-mini-box-light">
+                                                <div class="mil-mini-icon"><i class="fas fa-check-circle"></i></div>
+                                                <div>
+                                                    <h6 style="color: #111215; margin-bottom: 6px; font-size: 15px; font-weight: 600;">Production-Ready Code</h6>
+                                                    <p style="color: #555968; font-size: 13px; margin: 0; line-height: 1.5;">5+ deployed projects with role-based auth, live payments &amp; databases.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 mil-mb-20">
+                                            <div class="mil-about-mini-box-light">
+                                                <div class="mil-mini-icon"><i class="fas fa-bolt"></i></div>
+                                                <div>
+                                                    <h6 style="color: #111215; margin-bottom: 6px; font-size: 15px; font-weight: 600;">Rapid Sprint Delivery</h6>
+                                                    <p style="color: #555968; font-size: 13px; margin: 0; line-height: 1.5;">Modular React components, verified REST APIs, and immediate adaptability.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-5">
+
+                                <div class="mil-profile-card-light mil-up">
+                                    <h4 class="mil-mb-25" style="color: #111215; font-weight: 700; font-size: 20px; display: flex; align-items: center; justify-content: space-between;">
+                                        Quick Profile Overview 
+                                        <span class="mil-status-dot" title="Available to join immediately"></span>
+                                    </h4>
+                                    <ul class="mil-profile-list-light">
+                                        <li>
+                                            <span class="mil-profile-key-light">Role:</span>
+                                            <span class="mil-profile-val-light">Full Stack MERN Developer</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Primary Stack:</span>
+                                            <span class="mil-profile-val-light">React.js · Node.js · Express.js · MongoDB</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Relational DB:</span>
+                                            <span class="mil-profile-val-light">PostgreSQL / Neon DB</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Experience:</span>
+                                            <span class="mil-profile-val-light">Web Developer Intern (4 Months)</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Education:</span>
+                                            <span class="mil-profile-val-light">B.E. Computer Science (CGPA: 8.00)</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Location:</span>
+                                            <span class="mil-profile-val-light"><strong>Open to Relocate (Any Location)</strong> · Chennai · Bangalore · Remote</span>
+                                        </li>
+                                        <li>
+                                            <span class="mil-profile-key-light">Availability:</span>
+                                            <span class="mil-profile-val-light mil-badge-immediate-light"><i class="fas fa-bolt"></i> Immediate Joiner (0–7 Days)</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="mil-profile-actions-light">
+                                        <a href="https://github.com/sumathi-4" target="_blank" data-no-swup class="mil-profile-btn-light">
+                                            <i class="fab fa-github"></i> GitHub Profile
+                                        </a>
+                                        <a href="https://linkedin.com/in/sumathi2006" target="_blank" data-no-swup class="mil-profile-btn-light">
+                                            <i class="fab fa-linkedin-in"></i> LinkedIn Profile
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ABOUT END -->
+
+                <!-- FEATURED PROJECTS SHOWCASE -->
+                <section id="projects" class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-60">
+
+                            <div class="row align-items-end mil-mb-90">
+                                <div class="col-lg-7">
+                                    <span class="mil-suptitle mil-accent mil-up mil-mb-20">Production-Ready Applications</span>
+                                    <h2 class="mil-muted mil-up">Featured <span class="mil-thin">Full Stack Projects</span></h2>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p class="mil-light-soft mil-up">
+                                        Real-world projects architected with multi-role permissions, secure payment handling, dynamic document generators, and responsive React interfaces.
+                                    </p>
+                                </div>
+                            </div>
+
+                                                                    <div class="row">
+
+                                <!-- Project 1: MithraShoppy (Split-View: Left UI, Right Details) -->
+                                <div class="col-lg-12 mil-mb-60">
+                                    <div class="mil-split-project-card mil-up">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 mil-split-window-col order-1 order-lg-1">
+                                                <div class="mil-split-browser-frame">
+                                                    <!-- Top Chrome Bar -->
+                                                    <div class="mil-browser-chrome-bar">
+                                                        <div class="mil-window-dots">
+                                                            <span class="mil-window-dot mil-dot-red"></span>
+                                                            <span class="mil-window-dot mil-dot-yellow"></span>
+                                                            <span class="mil-window-dot mil-dot-green"></span>
+                                                        </div>
+                                                        <div class="mil-browser-address-pill">
+                                                            <i class="fas fa-lock"></i>
+                                                            <span id="mithra-split-address">mithrashopy-website.netlify.app</span>
+                                                        </div>
+                                                        <div class="mil-browser-live-badge">
+                                                            <span class="mil-status-dot-mini"></span> Live
+                                                        </div>
+                                                    </div>
+                                                    <!-- Full-Width Segmented Tab Bar -->
+                                                    <div class="mil-browser-tab-bar">
+                                                        <button type="button" class="mil-tab-switch-btn active" data-img-id="mithra-split-img" data-link-id="mithra-split-link" data-label-id="mithra-split-label" data-address-id="mithra-split-address" data-img="img/projects/mithrashopy.png" data-link="https://mithrashopy-website.netlify.app/" data-address="mithrashopy-website.netlify.app" data-label="View Storefront">
+                                                            <i class="fas fa-store"></i> Storefront
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="mithra-split-img" data-link-id="mithra-split-link" data-label-id="mithra-split-label" data-address-id="mithra-split-address" data-img="img/projects/mithrashopy-admin.png" data-link="https://mithrashopy-admin.netlify.app/" data-address="mithrashopy-admin.netlify.app" data-label="View Admin Panel">
+                                                            <i class="fas fa-user-shield"></i> Admin
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="mithra-split-img" data-link-id="mithra-split-link" data-label-id="mithra-split-label" data-address-id="mithra-split-address" data-img="img/projects/mithrashopy-seller.png" data-link="https://mithrashopy-seller.netlify.app/" data-address="mithrashopy-seller.netlify.app" data-label="View Seller Portal">
+                                                            <i class="fas fa-user-tie"></i> Seller
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="mithra-split-img" data-link-id="mithra-split-link" data-label-id="mithra-split-label" data-address-id="mithra-split-address" data-img="img/projects/mithrashopy-luckycharm.png" data-has-link="false" data-link="" data-label="" data-address="mithrashopy-website.netlify.app/lucky-charm">
+                                                            <i class="fas fa-gift"></i> Lucky Charm
+                                                        </button>
+                                                    </div>
+                                                    <!-- Viewport (16:9 Balanced Aspect Ratio) -->
+                                                    <a href="https://mithrashopy-website.netlify.app/" target="_blank" class="mil-split-browser-viewport" id="mithra-split-link" data-no-swup>
+                                                        <img src="img/projects/mithrashopy.png" id="mithra-split-img" alt="MithraShoppy Storefront Preview" loading="lazy">
+                                                        <div class="mil-card-preview-overlay">
+                                                            <span id="mithra-split-label"><i class="fas fa-external-link-alt"></i> View Storefront</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 mil-split-details-col order-2 order-lg-2">
+                                                <span class="mil-project-category"><i class="fas fa-shopping-bag"></i> Multi-Vendor E-Commerce Platform</span>
+                                                <h3 class="mil-project-title">MithraShoppy</h3>
+                                                <h6 class="mil-project-subtitle">Customer, Admin &amp; Seller Portals with Lucky Charm Rewards</h6>
+                                                <p class="mil-project-pitch">
+                                                    A multi-vendor e-commerce platform built with React.js, Node.js, Express.js, and MongoDB, featuring separate portal experiences for customers, sellers, and administrators.
+                                                </p>
+                                                <ul class="mil-project-features">
+                                                    <li><i class="fas fa-gift" style="color: #ff9800;"></i> <span><strong>Lucky Charm Feature:</strong> Spin-the-wheel reward module applying dynamic discount coupons at checkout.</span></li>
+                                                    <li><i class="fas fa-users-cog"></i> <span><strong>3 Dedicated Workflows:</strong> Customer storefront, vendor seller dashboard with product &amp; order management, and master admin panel.</span></li>
+                                                    <li><i class="fas fa-cloud-upload-alt"></i> <span><strong>Media &amp; Status Workflows:</strong> Integrated Cloudinary for media uploads, payment-status tracking, reviews, and customer ratings.</span></li>
+                                                </ul>
+                                                <div class="mil-project-tech-tags">
+                                                    <span class="mil-tech-tag" style="border-color: rgba(255, 152, 0, 0.4); color: #ff9800;"><i class="fas fa-gift"></i> Lucky Charm</span>
+                                                    <span class="mil-tech-tag">React.js</span>
+                                                    <span class="mil-tech-tag">Node.js</span>
+                                                    <span class="mil-tech-tag">Express.js</span>
+                                                    <span class="mil-tech-tag">MongoDB</span>
+                                                    <span class="mil-tech-tag">Cloudinary</span>
+                                                </div>
+                                                <div class="mil-project-action-row">
+                                                    <a href="https://mithrashopy-website.netlify.app/" target="_blank" class="mil-btn-live" data-no-swup><i class="fas fa-external-link-alt"></i> Live Storefront</a>
+                                                    <a href="https://github.com/sumathi-4/atrio_mithrashopy" target="_blank" class="mil-btn-github" data-no-swup><i class="fab fa-github"></i> Code</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 2: Happy Sarees (Split-View: Left Details, Right UI) -->
+                                <div class="col-lg-12 mil-mb-60">
+                                    <div class="mil-split-project-card mil-up">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-5 mil-split-details-col order-2 order-lg-1">
+                                                <span class="mil-project-category"><i class="fas fa-store"></i> Saree E-Commerce Platform</span>
+                                                <h3 class="mil-project-title">Happy Sarees</h3>
+                                                <h6 class="mil-project-subtitle">Customer Storefront, Seller Portal &amp; Saree Crown Voting</h6>
+                                                <p class="mil-project-pitch">
+                                                    A responsive saree e-commerce platform built with React.js, Node.js, Express.js, and PostgreSQL (Neon), featuring dual payment options and interactive customer voting.
+                                                </p>
+                                                <ul class="mil-project-features">
+                                                    <li><i class="fas fa-crown" style="color: #ff9800;"></i> <span><strong>Saree Crown Feature:</strong> Interactive voting module where customers vote for their favorite sarees with dynamic vote tallies.</span></li>
+                                                    <li><i class="fas fa-credit-card"></i> <span><strong>Dual Payment Options:</strong> Integrated Razorpay online payment gateway alongside dynamic UPI QR payments for checkout.</span></li>
+                                                    <li><i class="fas fa-database"></i> <span><strong>Relational PostgreSQL (Neon):</strong> Database schema for saree inventory, seller catalog management, orders, and customer accounts.</span></li>
+                                                </ul>
+                                                <div class="mil-project-tech-tags">
+                                                    <span class="mil-tech-tag" style="border-color: rgba(255, 152, 0, 0.4); color: #ff9800;"><i class="fas fa-crown"></i> Saree Crown</span>
+                                                    <span class="mil-tech-tag">React.js</span>
+                                                    <span class="mil-tech-tag">Node.js</span>
+                                                    <span class="mil-tech-tag">Express.js</span>
+                                                    <span class="mil-tech-tag">PostgreSQL</span>
+                                                    <span class="mil-tech-tag">Razorpay</span>
+                                                </div>
+                                                <div class="mil-project-action-row">
+                                                    <a href="https://happysarees.netlify.app/" target="_blank" class="mil-btn-live" data-no-swup><i class="fas fa-external-link-alt"></i> Live Storefront</a>
+                                                    <a href="https://github.com/sumathi-4/atrio_happysarees" target="_blank" class="mil-btn-github" data-no-swup><i class="fab fa-github"></i> Code</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 mil-split-window-col order-1 order-lg-2">
+                                                <div class="mil-split-browser-frame">
+                                                    <!-- Top Chrome Bar -->
+                                                    <div class="mil-browser-chrome-bar">
+                                                        <div class="mil-window-dots">
+                                                            <span class="mil-window-dot mil-dot-red"></span>
+                                                            <span class="mil-window-dot mil-dot-yellow"></span>
+                                                            <span class="mil-window-dot mil-dot-green"></span>
+                                                        </div>
+                                                        <div class="mil-browser-address-pill">
+                                                            <i class="fas fa-lock"></i>
+                                                            <span id="happy-split-address">happysarees.netlify.app</span>
+                                                        </div>
+                                                        <div class="mil-browser-live-badge">
+                                                            <span class="mil-status-dot-mini"></span> Live
+                                                        </div>
+                                                    </div>
+                                                    <!-- Full-Width Segmented Tab Bar -->
+                                                    <div class="mil-browser-tab-bar">
+                                                        <button type="button" class="mil-tab-switch-btn active" data-img-id="happy-split-img" data-link-id="happy-split-link" data-label-id="happy-split-label" data-address-id="happy-split-address" data-img="img/projects/happysarees.png" data-link="https://happysarees.netlify.app/" data-address="happysarees.netlify.app" data-label="View Storefront">
+                                                            <i class="fas fa-store"></i> Storefront
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="happy-split-img" data-link-id="happy-split-link" data-label-id="happy-split-label" data-address-id="happy-split-address" data-img="img/projects/happysarees-seller.png" data-link="https://happysarees-seller.netlify.app/" data-address="happysarees-seller.netlify.app" data-label="View Seller Hub">
+                                                            <i class="fas fa-user-tie"></i> Seller
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="happy-split-img" data-link-id="happy-split-link" data-label-id="happy-split-label" data-address-id="happy-split-address" data-img="img/projects/happysarees-admin.png" data-link="https://happysarees-admin.netlify.app/" data-address="happysarees-admin.netlify.app" data-label="View Super Admin">
+                                                            <i class="fas fa-user-shield"></i> Admin
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="happy-split-img" data-link-id="happy-split-link" data-label-id="happy-split-label" data-address-id="happy-split-address" data-img="img/projects/happysarees-crown.png" data-has-link="false" data-link="" data-label="" data-address="happysarees.netlify.app/saree-crown">
+                                                            <i class="fas fa-crown"></i> Saree Crown
+                                                        </button>
+                                                    </div>
+                                                    <!-- Viewport (16:9 Balanced Aspect Ratio) -->
+                                                    <a href="https://happysarees.netlify.app/" target="_blank" class="mil-split-browser-viewport" id="happy-split-link" data-no-swup>
+                                                        <img src="img/projects/happysarees.png" id="happy-split-img" alt="Happy Sarees Storefront Preview" loading="lazy">
+                                                        <div class="mil-card-preview-overlay">
+                                                            <span id="happy-split-label"><i class="fas fa-external-link-alt"></i> View Storefront</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 3: Hasslefree Travel (Split-View: Left UI, Right Details) -->
+                                <div class="col-lg-12 mil-mb-60">
+                                    <div class="mil-split-project-card mil-up">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 mil-split-window-col order-1 order-lg-1">
+                                                <div class="mil-split-browser-frame">
+                                                    <!-- Top Chrome Bar -->
+                                                    <div class="mil-browser-chrome-bar">
+                                                        <div class="mil-window-dots">
+                                                            <span class="mil-window-dot mil-dot-red"></span>
+                                                            <span class="mil-window-dot mil-dot-yellow"></span>
+                                                            <span class="mil-window-dot mil-dot-green"></span>
+                                                        </div>
+                                                        <div class="mil-browser-address-pill">
+                                                            <i class="fas fa-lock"></i>
+                                                            <span id="hassle-split-address">travelhasslefree.com</span>
+                                                        </div>
+                                                        <div class="mil-browser-live-badge">
+                                                            <span class="mil-status-dot-mini"></span> Live
+                                                        </div>
+                                                    </div>
+                                                    <!-- Full-Width Segmented Tab Bar -->
+                                                    <div class="mil-browser-tab-bar">
+                                                        <button type="button" class="mil-tab-switch-btn active" data-img-id="hassle-split-img" data-link-id="hassle-split-link" data-label-id="hassle-split-label" data-address-id="hassle-split-address" data-img="img/projects/hasslefree.png" data-link="https://travelhasslefree.com/" data-address="travelhasslefree.com" data-label="View Live Website">
+                                                            <i class="fas fa-globe"></i> Website
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="hassle-split-img" data-link-id="hassle-split-link" data-label-id="hassle-split-label" data-address-id="hassle-split-address" data-img="img/projects/hasslefree-apply.png" data-link="https://travelhasslefree.com/apply-visa" data-address="travelhasslefree.com/apply-visa" data-label="View Visa Application">
+                                                            <i class="fas fa-passport"></i> Apply Visa
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="hassle-split-img" data-link-id="hassle-split-link" data-label-id="hassle-split-label" data-address-id="hassle-split-address" data-img="img/projects/hasslefree-track-approved.png" data-link="https://travelhasslefree.com/track-visa" data-address="travelhasslefree.com/track-visa" data-label="View Visa Tracking Status">
+                                                            <i class="fas fa-search-location"></i> Track Visa
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="hassle-split-img" data-link-id="hassle-split-link" data-label-id="hassle-split-label" data-address-id="hassle-split-address" data-img="img/projects/hasslefree-admin.png" data-link="https://travelhasslefree.com/admin-login" data-address="travelhasslefree.com/admin-login" data-label="View Operations Hub">
+                                                            <i class="fas fa-user-shield"></i> Admin Hub
+                                                        </button>
+                                                    </div>
+                                                    <!-- Viewport (16:9 Balanced Aspect Ratio) -->
+                                                    <a href="https://travelhasslefree.com/" target="_blank" class="mil-split-browser-viewport" id="hassle-split-link" data-no-swup>
+                                                        <img src="img/projects/hasslefree.png" id="hassle-split-img" alt="Hasslefree Travel Website Preview" loading="lazy">
+                                                        <div class="mil-card-preview-overlay">
+                                                            <span id="hassle-split-label"><i class="fas fa-external-link-alt"></i> View Live Website</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 mil-split-details-col order-2 order-lg-2">
+                                                <span class="mil-project-category"><i class="fas fa-passport"></i> Visa Management Platform</span>
+                                                <h3 class="mil-project-title">Hasslefree Travel</h3>
+                                                <h6 class="mil-project-subtitle">Visa Intake, Real-Time Tracking &amp; Admin Billing Module</h6>
+                                                <p class="mil-project-pitch">
+                                                    An end-to-end visa platform connecting applicant intake forms with real-time tracking lookups and back-office administrative billing operations.
+                                                </p>
+                                                <ul class="mil-project-features">
+                                                    <li><i class="fas fa-passport" style="color: #ff9800;"></i> <span><strong>Application &amp; Tracking:</strong> User-friendly visa application forms with live status lookups by Application ID and Passport Number.</span></li>
+                                                    <li><i class="fas fa-file-invoice-dollar"></i> <span><strong>Admin Billing Module:</strong> Built invoice generation with automatic CGST/SGST calculations, sequential invoice numbers, and payment status tracking.</span></li>
+                                                    <li><i class="fas fa-file-export"></i> <span><strong>PDF &amp; Excel Reports:</strong> Dynamic PDF generation for client invoices and automated Excel data export for agency administration.</span></li>
+                                                </ul>
+                                                <div class="mil-project-tech-tags">
+                                                    <span class="mil-tech-tag" style="border-color: rgba(255, 152, 0, 0.4); color: #ff9800;"><i class="fas fa-search-location"></i> Visa Tracking</span>
+                                                    <span class="mil-tech-tag">React.js</span>
+                                                    <span class="mil-tech-tag">Node.js</span>
+                                                    <span class="mil-tech-tag">Express.js</span>
+                                                    <span class="mil-tech-tag">PostgreSQL</span>
+                                                    <span class="mil-tech-tag">REST APIs</span>
+                                                </div>
+                                                <div class="mil-project-action-row">
+                                                    <a href="https://travelhasslefree.com/" target="_blank" class="mil-btn-live" data-no-swup><i class="fas fa-external-link-alt"></i> Live Site</a>
+                                                    <a href="https://github.com/sumathi-4/hasslefree-Travel" target="_blank" class="mil-btn-github" data-no-swup><i class="fab fa-github"></i> Code</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 4: Print Module (Split-View: Left Details, Right UI) -->
+                                <div class="col-lg-12 mil-mb-60">
+                                    <div class="mil-split-project-card mil-up">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-5 mil-split-details-col order-2 order-lg-1">
+                                                <span class="mil-project-category"><i class="fas fa-print"></i> Print Order Management System</span>
+                                                <h3 class="mil-project-title">Print Module</h3>
+                                                <h6 class="mil-project-subtitle">Automatic PDF Inspection &amp; Dynamic Pricing Engine</h6>
+                                                <p class="mil-project-pitch">
+                                                    A full-stack print management system that handles PDF document uploads, automatic page detection, and dynamic pricing calculations for custom print orders.
+                                                </p>
+                                                <ul class="mil-project-features">
+                                                    <li><i class="fas fa-calculator" style="color: #ff9800;"></i> <span><strong>Dynamic Pricing Engine:</strong> Automated cost calculation based on detected page counts, color vs. black &amp; white, paper options, and copy quantities.</span></li>
+                                                    <li><i class="fas fa-file-pdf"></i> <span><strong>Automatic PDF.js Detection:</strong> Client-side PDF inspection that automatically extracts and verifies total page counts immediately upon file upload.</span></li>
+                                                    <li><i class="fas fa-list-alt"></i> <span><strong>Order Management Dashboard:</strong> Backend order workflow recording customer contact information, document specs, and order history.</span></li>
+                                                </ul>
+                                                <div class="mil-project-tech-tags">
+                                                    <span class="mil-tech-tag" style="border-color: rgba(255, 152, 0, 0.4); color: #ff9800;"><i class="fas fa-calculator"></i> Price Engine</span>
+                                                    <span class="mil-tech-tag">JavaScript</span>
+                                                    <span class="mil-tech-tag">Node.js</span>
+                                                    <span class="mil-tech-tag">Express.js</span>
+                                                    <span class="mil-tech-tag">PDF.js</span>
+                                                </div>
+                                                <div class="mil-project-action-row">
+                                                    <a href="https://print-module-70s2.onrender.com" target="_blank" class="mil-btn-live" data-no-swup><i class="fas fa-external-link-alt"></i> Calculator</a>
+                                                    <a href="https://github.com/sumathi-4/print-module" target="_blank" class="mil-btn-github" data-no-swup><i class="fab fa-github"></i> Code</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 mil-split-window-col order-1 order-lg-2">
+                                                <div class="mil-split-browser-frame">
+                                                    <!-- Top Chrome Bar -->
+                                                    <div class="mil-browser-chrome-bar">
+                                                        <div class="mil-window-dots">
+                                                            <span class="mil-window-dot mil-dot-red"></span>
+                                                            <span class="mil-window-dot mil-dot-yellow"></span>
+                                                            <span class="mil-window-dot mil-dot-green"></span>
+                                                        </div>
+                                                        <div class="mil-browser-address-pill">
+                                                            <i class="fas fa-lock"></i>
+                                                            <span id="print-split-address">print-module-70s2.onrender.com</span>
+                                                        </div>
+                                                        <div class="mil-browser-live-badge">
+                                                            <span class="mil-status-dot-mini"></span> Live
+                                                        </div>
+                                                    </div>
+                                                    <!-- Full-Width Segmented Tab Bar -->
+                                                    <div class="mil-browser-tab-bar">
+                                                        <button type="button" class="mil-tab-switch-btn active" data-img-id="print-split-img" data-link-id="print-split-link" data-label-id="print-split-label" data-address-id="print-split-address" data-img="img/projects/printmodule-calculator.png" data-link="https://print-module-70s2.onrender.com" data-address="print-module-70s2.onrender.com" data-label="View Price Calculator">
+                                                            <i class="fas fa-calculator"></i> Price Calculator
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="print-split-img" data-link-id="print-split-link" data-label-id="print-split-label" data-address-id="print-split-address" data-img="img/projects/printmodule-orders.png" data-link="https://print-module-70s2.onrender.com/orders.html" data-address="print-module-70s2.onrender.com/orders.html" data-label="View Orders">
+                                                            <i class="fas fa-list-alt"></i> Orders
+                                                        </button>
+                                                    </div>
+                                                    <!-- Viewport (16:9 Balanced Aspect Ratio) -->
+                                                    <a href="https://print-module-70s2.onrender.com" target="_blank" class="mil-split-browser-viewport" id="print-split-link" data-no-swup>
+                                                        <img src="img/projects/printmodule-calculator.png" id="print-split-img" alt="Print Module Price Calculator Preview" loading="lazy">
+                                                        <div class="mil-card-preview-overlay">
+                                                            <span id="print-split-label"><i class="fas fa-external-link-alt"></i> View Price Calculator</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Project 5: Smurfy Rock Paper Scissors (Split-View: Left UI, Right Details) -->
+                                <div class="col-lg-12 mil-mb-60">
+                                    <div class="mil-split-project-card mil-up">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-7 mil-split-window-col order-1 order-lg-1">
+                                                <div class="mil-split-browser-frame">
+                                                    <!-- Top Chrome Bar -->
+                                                    <div class="mil-browser-chrome-bar">
+                                                        <div class="mil-window-dots">
+                                                            <span class="mil-window-dot mil-dot-red"></span>
+                                                            <span class="mil-window-dot mil-dot-yellow"></span>
+                                                            <span class="mil-window-dot mil-dot-green"></span>
+                                                        </div>
+                                                        <div class="mil-browser-address-pill">
+                                                            <i class="fas fa-lock"></i>
+                                                            <span id="smurfy-split-address">smurfs-rps-game.netlify.app</span>
+                                                        </div>
+                                                        <div class="mil-browser-live-badge">
+                                                            <span class="mil-status-dot-mini"></span> Live
+                                                        </div>
+                                                    </div>
+                                                    <!-- Full-Width Segmented Tab Bar -->
+                                                    <div class="mil-browser-tab-bar">
+                                                        <button type="button" class="mil-tab-switch-btn active" data-img-id="smurfy-split-img" data-link-id="smurfy-split-link" data-label-id="smurfy-split-label" data-address-id="smurfy-split-address" data-img="img/projects/smurfy-rps.png" data-link="https://smurfs-rps-game.netlify.app" data-address="smurfs-rps-game.netlify.app" data-label="Play Live Game">
+                                                            <i class="fas fa-gamepad"></i> Game Start
+                                                        </button>
+                                                        <button type="button" class="mil-tab-switch-btn" data-img-id="smurfy-split-img" data-link-id="smurfy-split-link" data-label-id="smurfy-split-label" data-address-id="smurfy-split-address" data-img="img/projects/smurfy-gameplay.png" data-link="https://smurfs-rps-game.netlify.app/game/game.html" data-address="smurfs-rps-game.netlify.app/game/game.html" data-label="Play Live Match">
+                                                            <i class="fas fa-trophy"></i> Live Gameplay
+                                                        </button>
+                                                    </div>
+                                                    <!-- Viewport (16:9 Balanced Aspect Ratio) -->
+                                                    <a href="https://smurfs-rps-game.netlify.app" target="_blank" class="mil-split-browser-viewport" id="smurfy-split-link" data-no-swup>
+                                                        <img src="img/projects/smurfy-rps.png" id="smurfy-split-img" alt="Smurfy Rock Paper Scissors Live Preview" loading="lazy">
+                                                        <div class="mil-card-preview-overlay">
+                                                            <span id="smurfy-split-label"><i class="fas fa-play"></i> Play Live Game</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 mil-split-details-col order-2 order-lg-2">
+                                                <span class="mil-project-category"><i class="fas fa-gamepad"></i> Interactive Web Game</span>
+                                                <h3 class="mil-project-title">Smurfy Rock Paper Scissors</h3>
+                                                <h6 class="mil-project-subtitle">Browser Arcade Game with Dynamic State Control</h6>
+                                                <p class="mil-project-pitch">
+                                                    A responsive JavaScript game featuring dynamic round state machines, celebratory animations, real-time score tracking, and local score persistence.
+                                                </p>
+                                                <ul class="mil-project-features">
+                                                    <li><i class="fas fa-trophy" style="color: #ff9800;"></i> <span><strong>Dynamic Game Engine:</strong> Player vs. Computer rounds with animated countdowns, round outcome detection, and celebratory effects.</span></li>
+                                                    <li><i class="fas fa-sliders-h"></i> <span><strong>Game State Controls:</strong> Clean JavaScript event logic implementing Start, Pause, Resume, and Restart gameplay controls.</span></li>
+                                                    <li><i class="fas fa-save"></i> <span><strong>Score Persistence:</strong> Player scores and game records stored and retrieved seamlessly across sessions using <code>localStorage</code>.</span></li>
+                                                </ul>
+                                                <div class="mil-project-tech-tags">
+                                                    <span class="mil-tech-tag" style="border-color: rgba(255, 152, 0, 0.4); color: #ff9800;"><i class="fas fa-trophy"></i> Match Engine</span>
+                                                    <span class="mil-tech-tag">JavaScript (ES6+)</span>
+                                                    <span class="mil-tech-tag">DOM Manipulation</span>
+                                                    <span class="mil-tech-tag">localStorage</span>
+                                                    <span class="mil-tech-tag">CSS3 Animations</span>
+                                                </div>
+                                                <div class="mil-project-action-row">
+                                                    <a href="https://smurfs-rps-game.netlify.app" target="_blank" class="mil-btn-live" data-no-swup><i class="fas fa-play"></i> Play Game</a>
+                                                    <a href="https://github.com/sumathi-4/rps-game" target="_blank" class="mil-btn-github" data-no-swup><i class="fab fa-github"></i> Code</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- FEATURED PROJECTS END -->
+
+                <!-- EXPERIENCE & EDUCATION (Clean Editorial Light Theme) -->
+                <section id="experience" class="mil-experience-section-light">
+                    <div class="container mil-p-120-60">
+                        <div class="row justify-content-between">
+                            
+                            <!-- Work Experience -->
+                            <div class="col-lg-6 mil-mb-60">
+                                <span class="mil-suptitle mil-up mil-mb-20" style="color: #e65100; font-weight: 600;">
+                                    <i class="fas fa-briefcase"></i> Career Journey
+                                </span>
+                                <h3 class="mil-up mil-mb-40" style="color: #111215; font-weight: 700;">Professional Experience</h3>
+
+                                <!-- Experience 1: Atriowings -->
+                                <div class="mil-exp-card mil-up">
+                                    <div class="mil-exp-card-inner">
+                                        <div class="mil-exp-date">
+                                            <i class="far fa-calendar-alt"></i> Jun 2026 – Aug 2026
+                                        </div>
+                                        <h4 class="mil-exp-role">Junior Web Developer</h4>
+                                        <div class="mil-exp-company">
+                                            <i class="fas fa-building"></i> Atriowings &bull; Chennai, India
+                                        </div>
+                                        <ul class="mil-exp-desc">
+                                            <li>Developed and enhanced full-stack web applications using <strong>React.js, Node.js, Express.js, MongoDB, and PostgreSQL</strong> across commercial e-commerce, travel, and content projects.</li>
+                                            <li>Engineered complete multi-user workflows including customer portals, vendor seller dashboards, and master admin control panels with REST API endpoints, JWT authentication, and RBAC authorization.</li>
+                                            <li>Integrated mission-critical third-party services: <strong>Razorpay online &amp; UPI payments</strong>, <strong>Cloudinary CDN image pipelines</strong>, and <strong>SMTP transactional emailing</strong>.</li>
+                                            <li>Conducted comprehensive Postman API testing, edge-case debugging, Git branch collaboration, and deployment configurations on Netlify and Render.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Experience 2: Right UpNext Innovations -->
+                                <div class="mil-exp-card mil-up">
+                                    <div class="mil-exp-card-inner">
+                                        <div class="mil-exp-date">
+                                            <i class="far fa-calendar-alt"></i> Jul 2025 – Aug 2025
+                                        </div>
+                                        <h4 class="mil-exp-role">Full Stack Web Development Intern</h4>
+                                        <div class="mil-exp-company">
+                                            <i class="fas fa-laptop-code"></i> Right UpNext Innovations &bull; Intensive 30-Day Internship
+                                        </div>
+                                        <ul class="mil-exp-desc">
+                                            <li>Built responsive web applications utilizing HTML5, CSS3, JavaScript ES6+, and React.js frontend component trees.</li>
+                                            <li>Constructed backend Node.js and Express REST APIs with database CRUD operations and practical industry development workflows.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Education & Credentials -->
+                            <div class="col-lg-5 mil-mb-60">
+                                <span class="mil-suptitle mil-up mil-mb-20" style="color: #e65100; font-weight: 600;">
+                                    <i class="fas fa-graduation-cap"></i> Academics
+                                </span>
+                                <h3 class="mil-up mil-mb-40" style="color: #111215; font-weight: 700;">Education &amp; Background</h3>
+
+                                <!-- Education 1: B.E. College -->
+                                <div class="mil-exp-card mil-up">
+                                    <div class="mil-exp-card-inner">
+                                        <div class="mil-exp-date">
+                                            <i class="far fa-calendar-alt"></i> 2022 – 2026
+                                        </div>
+                                        <h4 class="mil-exp-role">B.E. Computer Science &amp; Engineering</h4>
+                                        <div class="mil-exp-company">
+                                            <i class="fas fa-university"></i> Bharath Niketan Engineering College
+                                        </div>
+                                        <div class="mil-mb-15">
+                                            <span class="mil-grade-pill"><i class="fas fa-award"></i> CGPA: 8.00 / 10.0</span>
+                                        </div>
+                                        <p class="mil-exp-desc-text">
+                                            Core coursework in Object-Oriented Programming, Database Management Systems (DBMS), Web Technologies, Data Structures, and Software Engineering.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Education 2: HSC -->
+                                <div class="mil-exp-card mil-up">
+                                    <div class="mil-exp-card-inner">
+                                        <div class="mil-exp-date">
+                                            <i class="far fa-calendar-alt"></i> 2020 – 2022
+                                        </div>
+                                        <h4 class="mil-exp-role">Higher Secondary Certificate (HSC)</h4>
+                                        <div class="mil-exp-company">
+                                            <i class="fas fa-school"></i> Z.K.M. Higher Secondary School, Bodinayakanur
+                                        </div>
+                                        <div class="mil-mb-15">
+                                            <span class="mil-grade-pill"><i class="fas fa-award"></i> Score: 70%</span>
+                                        </div>
+                                        <p class="mil-exp-desc-text">
+                                            Mathematics, Physics, Chemistry &amp; Computer Science stream.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Education 3: SSLC -->
+                                <div class="mil-exp-card mil-up">
+                                    <div class="mil-exp-card-inner">
+                                        <div class="mil-exp-date">
+                                            <i class="far fa-calendar-alt"></i> 2019 – 2020
+                                        </div>
+                                        <h4 class="mil-exp-role">Secondary School Leaving Certificate (SSLC)</h4>
+                                        <div class="mil-exp-company">
+                                            <i class="fas fa-school"></i> Z.K.M. Higher Secondary School, Bodinayakanur
+                                        </div>
+                                        <div>
+                                            <span class="mil-grade-pill"><i class="fas fa-award"></i> Score: 81%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TECHNICAL SKILLS MATRIX -->
+                <section id="skills" class="mil-dark-bg">
+                    <div class="mi-invert-fix">
+                        <div class="container mil-p-120-60">
+
+                            <div class="mil-center mil-mb-90">
+                                <span class="mil-suptitle mil-accent mil-up mil-mb-20">Core Technical Repertoire</span>
+                                <h2 class="mil-muted mil-up">Skills &amp; <span class="mil-thin">Technology Stack</span></h2>
+                            </div>
+
+                            <div class="row">
+
+                                <!-- Frontend Development -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-up">
+                                        <div class="mil-skill-title">
+                                            <i class="fab fa-react"></i> Frontend &amp; Languages
+                                        </div>
+                                        <div>
+                                            <span class="mil-tech-tag mil-tag-highlight">React.js</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">JavaScript (ES6+)</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">C Language</span>
+                                            <span class="mil-tech-tag">HTML5 &amp; CSS3</span>
+                                            <span class="mil-tech-tag">React Router</span>
+                                            <span class="mil-tech-tag">Responsive Design</span>
+                                            <span class="mil-tech-tag">State &amp; Hooks</span>
+                                            <span class="mil-tech-tag">DOM Manipulation</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Backend & APIs -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-up">
+                                        <div class="mil-skill-title">
+                                            <i class="fab fa-node-js"></i> Backend &amp; APIs
+                                        </div>
+                                        <div>
+                                            <span class="mil-tech-tag mil-tag-highlight">Node.js</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">Express.js</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">RESTful APIs</span>
+                                            <span class="mil-tech-tag">JWT Authentication</span>
+                                            <span class="mil-tech-tag">Role-Based Access Control</span>
+                                            <span class="mil-tech-tag">CRUD Operations</span>
+                                            <span class="mil-tech-tag">Middleware Pipeline</span>
+                                            <span class="mil-tech-tag">API Error Handling</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Databases -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-up">
+                                        <div class="mil-skill-title">
+                                            <i class="fas fa-database"></i> Databases (NoSQL + SQL)
+                                        </div>
+                                        <div>
+                                            <span class="mil-tech-tag mil-tag-highlight">MongoDB</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">PostgreSQL</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">Mongoose ORM</span>
+                                            <span class="mil-tech-tag">Neon Serverless DB</span>
+                                            <span class="mil-tech-tag">Database Indexing</span>
+                                            <span class="mil-tech-tag">Aggregation Pipelines</span>
+                                            <span class="mil-tech-tag">Schema Design</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Services & Integrations -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-up">
+                                        <div class="mil-skill-title">
+                                            <i class="fas fa-cogs"></i> Integrations &amp; Services
+                                        </div>
+                                        <div>
+                                            <span class="mil-tech-tag mil-tag-highlight">Razorpay Payment Gateway</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">Cloudinary Media CDN</span>
+                                            <span class="mil-tech-tag">UPI QR Payments</span>
+                                            <span class="mil-tech-tag">SMTP / Transactional Email</span>
+                                            <span class="mil-tech-tag">PDF.js Processing</span>
+                                            <span class="mil-tech-tag">PDF Invoice Generation</span>
+                                            <span class="mil-tech-tag">Dynamic Excel Export</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tools & Deployment -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-up">
+                                        <div class="mil-skill-title">
+                                            <i class="fas fa-tools"></i> Developer Tooling
+                                        </div>
+                                        <div>
+                                            <span class="mil-tech-tag mil-tag-highlight">Git &amp; GitHub</span>
+                                            <span class="mil-tech-tag mil-tag-highlight">Postman API Client</span>
+                                            <span class="mil-tech-tag">VS Code</span>
+                                            <span class="mil-tech-tag">Chrome DevTools</span>
+                                            <span class="mil-tech-tag">Netlify Deployment</span>
+                                            <span class="mil-tech-tag">Render Cloud</span>
+                                            <span class="mil-tech-tag">npm Package Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Option 1: Animated Tech Orbit Card -->
+                                <div class="col-md-6 col-lg-4 mil-mb-30">
+                                    <div class="mil-skill-card mil-orbit-card mil-up">
+                                        <div class="mil-skill-title" style="margin-bottom: 0;">
+                                            <i class="fas fa-atom" style="color: #ff9800;"></i> Core Tech Orbit
+                                        </div>
+                                        
+                                        <div class="mil-orbit-stage">
+                                            <!-- Center Core -->
+                                            <div class="mil-orbit-center" title="Full Stack MERN Core">
+                                                <i class="fas fa-code"></i>
+                                                <span>MERN</span>
+                                            </div>
+
+                                            <!-- Inner Orbit (React, Node, JS) -->
+                                            <div class="mil-orbit-ring-inner">
+                                                <div class="mil-orbit-node mil-node-inner-1" title="React.js">
+                                                    <i class="fab fa-react" style="color: #61dafb;"></i>
+                                                </div>
+                                                <div class="mil-orbit-node mil-node-inner-2" title="Node.js">
+                                                    <i class="fab fa-node-js" style="color: #68a063;"></i>
+                                                </div>
+                                                <div class="mil-orbit-node mil-node-inner-3" title="JavaScript (ES6+)">
+                                                    <i class="fab fa-js" style="color: #f7df1e;"></i>
+                                                </div>
+                                            </div>
+
+                                            <!-- Outer Orbit (MongoDB, PostgreSQL, Git) -->
+                                            <div class="mil-orbit-ring-outer">
+                                                <div class="mil-orbit-node mil-node-outer-1" title="MongoDB">
+                                                    <i class="fas fa-leaf" style="color: #47a248;"></i>
+                                                </div>
+                                                <div class="mil-orbit-node mil-node-outer-2" title="PostgreSQL">
+                                                    <i class="fas fa-database" style="color: #41b883;"></i>
+                                                </div>
+                                                <div class="mil-orbit-node mil-node-outer-3" title="Git & GitHub">
+                                                    <i class="fab fa-git-alt" style="color: #f05032;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mil-orbit-caption">
+                                            <span class="mil-orbit-status"><span class="pulse-mini"></span> Active Ecosystem</span>
+                                            <span>Hover to inspect</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- TECHNICAL SKILLS END -->
+
+                <!-- DIRECT CONTACT & HIRE ME (Clean Editorial Light Theme) -->
+                <section id="contact" class="mil-contact-section-light">
+                    <div class="container mil-p-120-60">
+                        <div class="row justify-content-between">
+                            
+                            <div class="col-lg-5 mil-mb-60">
+                                <span class="mil-suptitle mil-up mil-mb-20" style="color: #e65100; font-weight: 600;">
+                                    <i class="fas fa-comments"></i> Start a Conversation
+                                </span>
+                                <h2 class="mil-up mil-mb-30" style="color: #111215; font-weight: 700;">
+                                    Let's Build Something <br><span style="color: #e65100; font-weight: 300;">Great Together.</span>
+                                </h2>
+                                <p class="mil-up mil-mb-40" style="color: #3b3f4e; font-size: 15px; line-height: 1.8;">
+                                    I am actively interviewing and ready to contribute to your engineering team immediately. Whether you need a Junior MERN Stack Developer, a React frontend engineer, or a full-stack builder, feel free to reach out directly.
+                                </p>
+
+                                <div class="mil-contact-item-light mil-up">
+                                    <div class="mil-contact-icon"><i class="fas fa-envelope"></i></div>
+                                    <div>
+                                        <h6>Direct Email</h6>
+                                        <p><a href="mailto:sumathisaraswathi4@gmail.com">sumathisaraswathi4@gmail.com</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="mil-contact-item-light mil-up">
+                                    <div class="mil-contact-icon"><i class="fas fa-phone-alt"></i></div>
+                                    <div>
+                                        <h6>Direct Phone / WhatsApp</h6>
+                                        <p><a href="tel:+919361211847">+91 9361211847</a></p>
+                                    </div>
+                                </div>
+
+                                <div class="mil-contact-item-light mil-up">
+                                    <div class="mil-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div>
+                                        <h6>Work Location &amp; Relocation</h6>
+                                        <p style="color: #111215 !important; font-weight: 600; margin-bottom: 6px;">
+                                            Bodinayakanur, Theni, Tamil Nadu
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px;">
+                                            <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(230, 81, 0, 0.1); color: #e65100; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 12px; border: 1px solid rgba(230, 81, 0, 0.28);">
+                                                <i class="fas fa-plane-departure" style="font-size: 11px;"></i> Open to Relocate (Any Location)
+                                            </span>
+                                            <span style="display: inline-flex; align-items: center; gap: 5px; background: #f0f2f7; color: #3b3f4e; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 12px; border: 1px solid #dce1eb;">
+                                                <i class="fas fa-city" style="font-size: 11px; color: #e65100;"></i> Chennai &bull; Bangalore &bull; Coimbatore
+                                            </span>
+                                            <span style="display: inline-flex; align-items: center; gap: 5px; background: #f0f2f7; color: #3b3f4e; font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 12px; border: 1px solid #dce1eb;">
+                                                <i class="fas fa-laptop-house" style="font-size: 11px; color: #e65100;"></i> On-site &bull; Hybrid &bull; Remote
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mil-up mil-mt-30">
+                                    <a href="https://github.com/sumathi-4" target="_blank" data-no-swup class="mil-contact-direct-btn">
+                                        <i class="fab fa-github" style="color: #e65100;"></i> GitHub Profile
+                                    </a>
+                                    <a href="https://linkedin.com/in/sumathi2006" target="_blank" data-no-swup class="mil-contact-direct-btn mil-ml-10">
+                                        <i class="fab fa-linkedin" style="color: #e65100;"></i> LinkedIn Profile
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mil-mb-60">
+                                <div class="mil-contact-form-card-light mil-up">
+                                    <h3>Send an Inquiry</h3>
+                                    <p>Leave a message or job brief and I will get back to you within 2 to 4 hours.</p>
+
+                                    <form action="mailto:sumathisaraswathi4@gmail.com" method="post" enctype="text/plain">
+                                        <div class="mil-mb-20">
+                                            <input type="text" name="name" placeholder="Your Name or Company" required>
+                                        </div>
+                                        <div class="mil-mb-20">
+                                            <input type="email" name="email" placeholder="Your Email Address" required>
+                                        </div>
+                                        <div class="mil-mb-20">
+                                            <input type="text" name="subject" placeholder="Role / Project Details (e.g., Junior MERN Role)" required>
+                                        </div>
+                                        <div class="mil-mb-25">
+                                            <textarea name="message" rows="4" placeholder="How can I help your engineering team?" required></textarea>
+                                        </div>
+                                        <button type="submit" class="mil-contact-btn-submit">
+                                            <span>Send Message Directly</span> <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- CONTACT END -->
+
+                <!-- FOOTER (Option B: Minimalist Single-Line Editorial Bar) -->
+                <footer class="mil-custom-footer">
+                    <div class="mi-invert-fix">
+                        <div class="container">
+                            <div class="mil-footer-single-line mil-up">
+                                
+                                <!-- Left: Branding & Role -->
+                                <div class="mil-footer-left-wrap">
+                                    <a href="#top" data-no-swup class="mil-footer-brand-mini">
+                                        &lt;Sumathi <span>/&gt;</span>
+                                    </a>
+                                    <span class="mil-footer-sep">/</span>
+                                    <p class="mil-footer-tagline-mini">
+                                        Full Stack MERN Developer <span class="mil-footer-dot-avail" title="Available for Work"></span>
+                                    </p>
+                                </div>
+
+                                <!-- Center: Social Links -->
+                                <div class="mil-footer-center-wrap">
+                                    <a href="https://github.com/sumathi-4" target="_blank" data-no-swup class="mil-footer-mini-icon" title="GitHub Profile">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/sumathi2006" target="_blank" data-no-swup class="mil-footer-mini-icon" title="LinkedIn Profile">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="mailto:sumathisaraswathi4@gmail.com" data-no-swup class="mil-footer-mini-icon" title="Send Email">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="Sumathi_A_Resume.pdf" download="Sumathi_A_Resume.pdf" data-no-swup class="mil-footer-mini-icon" title="Download Resume">
+                                        <i class="fas fa-file-download"></i>
+                                    </a>
+                                </div>
+
+                                <!-- Right: Copyright & Back to Top -->
+                                <div class="mil-footer-right-wrap">
+                                    <p class="mil-footer-copy-mini">
+                                        &copy; 2026 <strong>Sumathi A.</strong>
+                                    </p>
+                                    <span class="mil-footer-sep">•</span>
+                                    <a href="#top" data-no-swup class="mil-footer-top-link">
+                                        <span>Back to top</span> <i class="fas fa-arrow-up"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- FOOTER END -->
+
+                <!-- Hidden decorative 3D elements for Ashley template scripts -->
+                <div class="mil-hidden-elements">
+                    <div class="mil-dodecahedron">
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                        <div class="mil-pentagon">
+                            <div></div><div></div><div></div><div></div><div></div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                        <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z" />
+                    </svg>
+
+                    <svg width="250" viewBox="0 0 300 1404" fill="none" xmlns="http://www.w3.org/2000/svg" class="mil-lines">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 892L1 941H299V892C299 809.71 232.29 743 150 743C67.7096 743 1 809.71 1 892ZM0 942H300V892C300 809.157 232.843 742 150 742C67.1573 742 0 809.157 0 892L0 942Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 146V97L1 97V146C1 228.29 67.7096 295 150 295C232.29 295 299 228.29 299 146ZM300 96L0 96V146C0 228.843 67.1573 296 150 296C232.843 296 300 228.843 300 146V96Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 1H1V1403H299V1ZM0 0V1404H300V0H0Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 -4.37115e-08L150 1404L149 1404L149 0L150 -4.37115e-08Z" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 1324C232.29 1324 299 1257.29 299 1175C299 1092.71 232.29 1026 150 1026C67.7096 1026 1 1092.71 1 1175C1 1257.29 67.7096 1324 150 1324ZM150 1325C232.843 1325 300 1257.84 300 1175C300 1092.16 232.843 1025 150 1025C67.1573 1025 0 1092.16 0 1175C0 1257.84 67.1573 1325 150 1325Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M300 1175H0V1174H300V1175Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M150 678C232.29 678 299 611.29 299 529C299 446.71 232.29 380 150 380C67.7096 380 1 446.71 1 529C1 611.29 67.7096 678 150 678ZM150 679C232.843 679 300 611.843 300 529C300 446.157 232.843 379 150 379C67.1573 379 0 446.157 0 529C0 611.843 67.1573 679 150 679Z" class="mil-move" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move" />
+                    </svg>
+                </div>
+                <!-- Hidden elements end -->
+
+            </div>
+        </div>
+        <!-- Content End -->
+
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Scripts -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <script src="js/plugins/swup.min.js"></script>
+    <script src="js/plugins/swiper.min.js"></script>
+    <script src="js/plugins/fancybox.min.js"></script>
+    <script src="js/plugins/gsap.min.js"></script>
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Interactive Multi-Portal View Switcher -->
+    <script>
+        (function() {
+            function handleTabSwitch(btn) {
+                if (!btn) return;
+                var parentGroup = btn.closest('.mil-browser-tab-bar') || btn.closest('.mil-tab-switch-group');
+                if (parentGroup) {
+                    parentGroup.querySelectorAll('.mil-tab-switch-btn').forEach(function(b) {
+                        b.classList.remove('active');
+                    });
+                }
+                btn.classList.add('active');
+
+                var targetImgId = btn.getAttribute('data-img-id');
+                var targetLinkId = btn.getAttribute('data-link-id');
+                var targetLabelId = btn.getAttribute('data-label-id');
+                var targetAddressId = btn.getAttribute('data-address-id');
+                var newImg = btn.getAttribute('data-img');
+                var newLink = btn.getAttribute('data-link');
+                var newLabel = btn.getAttribute('data-label');
+                var newAddress = btn.getAttribute('data-address');
+
+                var imgEl = document.getElementById(targetImgId);
+                var linkEl = document.getElementById(targetLinkId);
+                var labelEl = document.getElementById(targetLabelId);
+                var addressEl = document.getElementById(targetAddressId);
+
+                var hasLink = btn.getAttribute('data-has-link') !== 'false' && Boolean(newLink) && newLink.trim() !== '';
+
+                if (imgEl && newImg && imgEl.getAttribute('src') !== newImg) {
+                    imgEl.style.opacity = '0.35';
+                    imgEl.style.transition = 'opacity 0.18s ease';
+                    setTimeout(function() {
+                        imgEl.src = newImg;
+                        imgEl.style.opacity = '1';
+                    }, 180);
+                }
+
+                if (linkEl) {
+                    var overlay = linkEl.querySelector('.mil-card-preview-overlay');
+                    if (hasLink) {
+                        linkEl.classList.remove('is-static-view');
+                        linkEl.setAttribute('href', newLink);
+                        linkEl.setAttribute('target', '_blank');
+                        linkEl.style.cursor = 'pointer';
+                        linkEl.style.pointerEvents = 'auto';
+                        if (overlay) {
+                            overlay.style.display = 'flex';
+                            overlay.style.visibility = 'visible';
+                        }
+                        if (labelEl && newLabel) {
+                            labelEl.innerHTML = '<i class="fas fa-external-link-alt"></i> ' + newLabel;
+                        }
+                    } else {
+                        linkEl.classList.add('is-static-view');
+                        linkEl.removeAttribute('href');
+                        linkEl.removeAttribute('target');
+                        linkEl.style.cursor = 'default';
+                        linkEl.style.pointerEvents = 'none';
+                        if (overlay) {
+                            overlay.style.display = 'none';
+                            overlay.style.visibility = 'hidden';
+                        }
+                    }
+                }
+
+                if (addressEl && newAddress) {
+                    addressEl.textContent = newAddress;
+                }
+            }
+
+            document.addEventListener('click', function(e) {
+                var btn = e.target.closest('.mil-tab-switch-btn');
+                if (btn) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    handleTabSwitch(btn);
+                }
+            });
+        })();
+    </script>
+
+    <!-- Animated Metrics Counter (Option 2) -->
+    <script>
+        (function() {
+            function initAnimatedCounters() {
+                var counters = document.querySelectorAll('.mil-counter');
+                if (!counters.length) return;
+
+                if ('IntersectionObserver' in window) {
+                    var observer = new IntersectionObserver(function(entries, obs) {
+                        entries.forEach(function(entry) {
+                            if (entry.isIntersecting) {
+                                var el = entry.target;
+                                if (el.dataset.animated === 'true') return;
+                                el.dataset.animated = 'true';
+                                animateCounter(el);
+                                obs.unobserve(el);
+                            }
+                        });
+                    }, { threshold: 0.25 });
+
+                    counters.forEach(function(counter) {
+                        observer.observe(counter);
+                    });
+                } else {
+                    counters.forEach(function(el) {
+                        el.textContent = el.getAttribute('data-target') || el.textContent;
+                    });
+                }
+            }
+
+            function animateCounter(el) {
+                var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+                var duration = target > 10 ? 1600 : 1000;
+                var startTime = null;
+
+                function step(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    var progress = Math.min((currentTime - startTime) / duration, 1);
+                    var ease = 1 - Math.pow(1 - progress, 3);
+                    var current = Math.floor(ease * target);
+
+                    el.textContent = current;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target;
+                    }
+                }
+
+                requestAnimationFrame(step);
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initAnimatedCounters);
+            } else {
+                initAnimatedCounters();
+            }
+
+            window.addEventListener('load', initAnimatedCounters);
+            document.addEventListener('swup:contentReplaced', initAnimatedCounters);
+        })();
+    </script>
+
+</body>
+
+</html>

@@ -366,6 +366,11 @@ $(function () {
         $('.mil-menu').toggleClass('mil-active');
         $('.mil-menu-frame').toggleClass('mil-active');
     });
+    $('.mil-main-menu a[href^="#"], .mil-menu-list a[href^="#"]').on('click', function () {
+        $('.mil-menu-btn').removeClass('mil-active');
+        $('.mil-menu').removeClass('mil-active');
+        $('.mil-menu-frame').removeClass('mil-active');
+    });
     /***************************
 
     main menu

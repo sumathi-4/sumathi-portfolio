@@ -1657,6 +1657,127 @@
             }
         }
 
+        /* Floating Tech Micro-Badges on Portrait */
+        .mil-hero-badge-float {
+            position: absolute;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(18, 20, 26, 0.92);
+            border: 1px solid rgba(255, 152, 0, 0.4);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55), 0 0 14px rgba(255, 152, 0, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #ffffff;
+            font-size: 11.5px;
+            font-weight: 700;
+            padding: 6px 13px;
+            border-radius: 20px;
+            z-index: 6;
+            letter-spacing: 0.3px;
+            pointer-events: none;
+            transition: transform 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .mil-badge-float-1 {
+            top: 20px;
+            left: -15px;
+            animation: floatSlow1 4s ease-in-out infinite alternate;
+        }
+
+        .mil-badge-float-2 {
+            bottom: 30px;
+            right: -15px;
+            animation: floatSlow2 4.5s ease-in-out infinite alternate;
+        }
+
+        .mil-badge-float-icon {
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        @keyframes floatSlow1 {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+
+        @keyframes floatSlow2 {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(5px); }
+        }
+
+        @media screen and (max-width: 991px) {
+            .mil-badge-float-1 {
+                top: 14px;
+                left: -10px;
+            }
+            .mil-badge-float-2 {
+                bottom: 20px;
+                right: -10px;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .mil-hero-badge-float {
+                font-size: 10px;
+                padding: 5px 9px;
+                gap: 5px;
+            }
+            .mil-badge-float-1 {
+                left: -4px;
+            }
+            .mil-badge-float-2 {
+                right: -4px;
+            }
+        }
+
+        /* Key Metrics Header */
+        .mil-hero-stats-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .mil-hero-stats-header .mil-suptitle {
+            color: #ff9800 !important;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 8px;
+        }
+
+        .mil-stats-strip-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.4px;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            .mil-hero-stats-header {
+                margin-bottom: 20px;
+            }
+            .mil-hero-stats-header .mil-suptitle {
+                font-size: 11px;
+                letter-spacing: 1px;
+            }
+            .mil-stats-strip-title {
+                font-size: 19px !important;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            .mil-stats-strip-title {
+                font-size: 17px !important;
+            }
+        }
+
         /* Key Metrics Strip - Option 2: Glassmorphic Cards with Icons & Animated Counters */
         .mil-hero-stats-strip {
             background: #141518;
@@ -1678,10 +1799,12 @@
         }
 
         .mil-stat-box {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(20, 22, 28, 0.75);
+            border: 1px solid rgba(255, 152, 0, 0.22);
+            border-top: 2px solid #ff9800;
             border-radius: 16px;
             padding: 28px 18px 24px 18px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
             text-align: center;
             width: 100%;
             height: 100%;
@@ -1780,8 +1903,15 @@
         }
 
         @media screen and (max-width: 991px) {
+            .mil-banner {
+                padding-bottom: 25px !important;
+            }
+            .mil-hero-portrait-col {
+                margin-top: 30px !important;
+                margin-bottom: 15px !important;
+            }
             .mil-hero-stats-strip {
-                padding: 35px 0 20px 0;
+                padding: 32px 0 20px 0;
             }
             .mil-stat-box {
                 padding: 22px 12px 20px 12px;
@@ -1795,8 +1925,15 @@
         }
 
         @media screen and (max-width: 576px) {
+            .mil-banner {
+                padding-bottom: 18px !important;
+            }
+            .mil-hero-portrait-col {
+                margin-top: 25px !important;
+                margin-bottom: 12px !important;
+            }
             .mil-hero-stats-strip {
-                padding: 28px 0 16px 0;
+                padding: 26px 0 16px 0;
             }
             .mil-hero-stats-strip .container {
                 padding-left: 14px;
@@ -3279,6 +3416,16 @@
                                             <img src="img/profile/sumathi.jpg" alt="Sumathi A - Full Stack MERN Developer">
                                         </div>
 
+                                        <!-- Floating Tech Micro-Badges -->
+                                        <div class="mil-hero-badge-float mil-badge-float-1">
+                                            <span class="mil-badge-float-icon"><i class="fab fa-react" style="color: #61dafb;"></i></span>
+                                            <span>MERN Specialist</span>
+                                        </div>
+                                        <div class="mil-hero-badge-float mil-badge-float-2">
+                                            <span class="mil-badge-float-icon"><i class="fas fa-check-circle" style="color: #27c93f;"></i></span>
+                                            <span>5+ Production Apps</span>
+                                        </div>
+
                                         <!-- Scroll Down Circle Arrow pinned to bottom-right of portrait -->
                                         <div class="mil-circle-text">
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve" class="mil-ct-svg mil-rotate" data-value="360">
@@ -3307,6 +3454,10 @@
                 <!-- KEY METRICS STRIP (Option 2: Animated Cards with Icons & Counters) -->
                 <section class="mil-hero-stats-strip">
                     <div class="container">
+                        <div class="mil-hero-stats-header mil-center mil-mb-30 mil-up">
+                            <span class="mil-suptitle mil-accent"><i class="fas fa-chart-line"></i> Proven Engineering Impact</span>
+                            <h3 class="mil-muted mil-stats-strip-title">Key Production Highlights</h3>
+                        </div>
                         <div class="row">
                             <div class="col-6 col-md-3">
                                 <div class="mil-stat-box mil-up">
